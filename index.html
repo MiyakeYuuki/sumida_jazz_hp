@@ -16,6 +16,7 @@
     <script src="js/jquery.freetile.min.js"></script>
     <script src="js/common.js"></script>
     <link rel="stylesheet" href="css/styles.css?v20211020b">
+    <link rel="stylesheet" href="css/style2025.css">
     <link href='https://fonts.googleapis.com/css?family=Exo:400,900|Open+Sans' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width">
@@ -26,6 +27,7 @@
         var tab = (!sp && (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0))
         if (tab) new ViewportExtra(1150)
     </script>
+    <link rel="stylesheet" href="style.css">
     <link rel="canonical" href="[!パーマリンク!]">
     <!--@IF:[*id:is(1):then(1):else()*]>
 	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
@@ -55,417 +57,189 @@
 </head>
 
 <body>
-    <!-- フォトギャラリー用ここから -->
-    <script
-        src="https://yuki.world/wp-content/litespeed/localres/aHR0cHM6Ly9hamF4Lmdvb2dsZWFwaXMuY29tL2FqYXgvlibs/jquery/3.4.1/jquery.min.js"
-        type="text/javascript"></script>
-    <script
-        src="https://yuki.world/wp-content/litespeed/localres/aHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS8=ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
-        type="text/javascript"></script>
-    <!-- フォトギャラリー用ここまで -->
-    <div id="sb-site">
-        <div id="headerArea">
-            <header>
-                <div class="container cf">
-                    <div id="logo">
-                        <h1><a href="[~1~]"><img src="images/logo.png" alt="Sumida Street Jazz Festival"><img
-                                    src="images/site_name_2025.png" alt="すみだストリートジャズフェスティバル" class="pc"><span
-                                    class="sp">すみだストリート<br>ジャズフェスティバル2025</span></a></h1>
-                    </div>
-                    <div id="date">
-                        <h2><img src="images/date_2025.png" alt="2025年10月18日（土）19日（日）開催" class="pc"><img
-                                src="images/date_2025.png" alt="2025年10月18日（土）19日（日）開催" class="sp"></h2>
-                    </div>
+    <!-- ヘッダー -->
+    <header class="navbar navbar-default container-fluid">
+        <div class="row">
+            <!-- 左側のロゴとテキスト -->
+            <div class="col-xs-12">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/top/logo_sumida_jazz.png" alt="Sumida Street Jazz Festival" class="logo">
+                        <span class="festival-text">
+                            <span class="title">すみだストリートジャズフェスティバル</span>
+                        </span>
+                    </a>
                 </div>
-            </header>
-            <nav id="headNav">
-                <div class="container">
-                    <div>
-                        <div id="google_translate_element"></div>
-                        <script type="text/javascript">
-                            function googleTranslateElementInit() {
-                                new google.translate.TranslateElement({ pageLanguage: 'ja', includedLanguages: 'en,ja,ko,zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
-                            }
-                        </script>
-                        <script type="text/javascript"
-                            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                    </div>
-                    <div id="fb-root">&nbsp;</div>
-                    <script>(function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0];
-                            if (d.getElementById(id)) return;
-                            js = d.createElement(s); js.id = id;
-                            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }(document, 'script', 'facebook-jssdk'));</script>
-                    <div class="pc">
-                        <!--@IF:[*alias:is(player):then(1):else()*]>
-				<div><a data-hashtags="sumidajazz" data-count="none" class="twitter-share-button" href="https://twitter.com/share" data-url="[!パーマリンク!]?bn=[*bandno*]">Tweet</a></div>
-<@ELSE>
-				<div><a data-hashtags="sumidajazz" data-count="none" class="twitter-share-button" href="https://twitter.com/share">Tweet</a></div>
-<@ENDIF-->
-                        <div data-layout="button" data-share="true" class="fb-like">&nbsp;</div>
-                    </div>
-                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
-                    <!--@IGNORE:BEGIN-->
-                    <div class="eng"><a href="[~487~]">ENGLISH</a></div>
-                    <!--@IGNORE:END-->
-                    <div class="sp sb-toggle-right">MENU</div>
-                </div>
-            </nav>
-            <nav id="globalNav" class="pc">
-                <ul class="container cf">
-                    <li><a href="[~869~]">SOOF/GIBIER</a></li>
-                    <li><a href="[~982~]">ACCESS</a></li>
-                    <li><a href="[~296~]">ABOUT</a></li>
-                    <li><a href="[~8~]">CONTACT</a></li>
-                    <!--@IGNORE:BEGIN-->
-                    <li><a href="[~75~]">VOLUNTEER</a></li>
-                    <li><a href="[~856~]">ENTRY</a></li>
-                    <li><a href="[~676~]">GOODS</a></li>
-                    <li><a href="[~726~]">ARTISTS</a></li>
-                    <li><a href="[~1001~]">TIMETABLE</a></li>
-                    <li><a href="[~1003~]">EVENT</a></li>
-                    <li><a href="[~941~]">隅田公園会場</a></li>
-                    <li><a href="[~769~]">GALLERY</a></li>
-                    <li><a href="[~769~]">忘れ物</a></li>
-                    <li><a href="[~9~]">SPONSOR</a></li>
-                    <li><a href="https://test-bm.my.canva.site/2024sumidajazz" target="_new">PAMPHLET</a></li>
+            </div>
+        </div>
+        <!-- 右上のメニュー -->
+        <div id="sampleAffixWrap">
+            <div id="sampleAffix" class="btn-group btn-group-justified pull-right" role="group" data-spy="affix"
+                data-offset-top="270">
+                <a href="#" class="btn btn-default" role="button">Menu</a>
+            </div>
+        </div>
+    </header>
 
-                    <li><a href="[~788~]">すみ☆サマ</a></li>
-                    <li><a href="[~850~]">ｸﾘｽﾏｽﾗｲﾌﾞ</a></li>
-                    <li><a href="[~714~]">DOWNLOAD</a></li>
-                    <li><a href="[~843~]">FAQ</a></li>
-                    <li><a href="[~774~]">ENTRY</a></li>
-                    <li><a href="[~753~]">EVENT</a></li>
-                    <li><a href="[~683~]">ZERO</a></li>
-                    <li><a href="[~761~]">ENTRY</a></li>
-                    <li><a href="[~468~]">10th SPECIAL</a></li>
-                    <li><a href="[~477~]">ACCESS</a></li>
-                    <li><a href="[~450~]">ECO</a></li>
-                    <li><a href="[~423~]">GALLERY</a></li>
-                    <!--@IGNORE:END-->
-                </ul>
-            </nav>
-        </div>
-        <div id="mainVisual">
-            <!--<img src="images/img_main.jpg" alt="" class="sp">-->
-        </div>
+    <!-- メイン -->
+    <main>
+        <!-- 追従用ボランティア詳細/募集 -->
+        <div class="fixed-volunteer">ボランティア詳細/募集</div>
+
+        <!-- 各種メニュー -->
         <div class="container">
-            <div id="carousel">
-                <h2>Guest Musicians</h2>
-                <ul>
-                    <li><img src="images/artists/2018/17-01.jpg" alt="大友良英＋山崎比呂志">
-                        <p>大友良英＋山崎比呂志</p>
-                    </li>
-                    <li><img src="images/artists/2018/17-02.jpg" alt="勝井祐二 辻コースケ デュオ">
-                        <p>勝井祐二 辻コースケ デュオ</p>
-                    </li>
-                    <li><img src="images/artists/2018/17-44kk.jpg" alt="かをり＆かずこwith立志舎高校演劇同好会">
-                        <p>かをり＆かずこwith立志舎高校演劇同好会</p>
-                    </li>
-                    <li><img src="images/artists/2018/17-46sq.jpg" alt="すみジャズカルテット@ランブリング">
-                        <p>すみジャズカルテット@ランブリング</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-04.jpg" alt="吾妻 光良 &amp; The Swinging Boppers">
-                        <p><span class="headliner">[HEADLINER]</span>吾妻 光良 &amp; The Swinging Boppers</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-03.jpg" alt="Hong soondal Baramnan Jazz">
-                        <p>Hong soondal Baramnan Jazz</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-05.jpg" alt="fox capture plan">
-                        <p>fox capture plan</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-07oh.jpg" alt="大山日出男セクステット">
-                        <p>大山日出男セクステット</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-08.jpg" alt="Keishi Tanaka">
-                        <p>Keishi Tanaka</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-09.jpg" alt="OKI DUB AINU BAND">
-                        <p>OKI DUB AINU BAND</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-10.jpg" alt="パンチの効いたオウケストラ">
-                        <p>パンチの効いたオウケストラ</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-11.jpg" alt="ブルーズ･ザ･ブッチャー + うつみようこ">
-                        <p>ブルーズ･ザ･ブッチャー + うつみようこ</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-12.jpg" alt="Swinky">
-                        <p>Swinky</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-14.jpg" alt="Ricky with FSP">
-                        <p>Ricky with FSP</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-15.jpg" alt="DAICHI">
-                        <p>DAICHI</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-19.jpg" alt="K2">
-                        <p>K2</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-21.jpg" alt="伊藤君子with.宮本貴奈">
-                        <p>伊藤君子with.宮本貴奈</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-39.jpg" alt="CONJUNTO SOBRIO">
-                        <p>CONJUNTO SOBRIO</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-32.jpg" alt="ザ・ショッキング">
-                        <p>ザ・ショッキング</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-40.jpg" alt="Shan dance art atelier">
-                        <p>Shan dance art atelier</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-20mr.jpg" alt="みほりょうすけ">
-                        <p>みほりょうすけ</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-06os1.jpg" alt="鈴木 勲 OMA SOUND feat.秋山一将">
-                        <p>鈴木 勲 OMA SOUND feat.秋山一将</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-17km.jpg" alt="鈴木楽器製作所PREZENTS ケンハモ@music">
-                        <p>鈴木楽器製作所PREZENTS ケンハモ@music</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-47ts.jpg" alt="東京鮮烈sess!on">
-                        <p>東京鮮烈sess!on</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-23.jpg" alt="TRI4TH">
-                        <p><span class="headliner">[HEADLINER]</span>TRI4TH</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-22ds.jpg?0716" alt="Dream Session for Sumida 2018">
-                        <p>Dream Session for Sumida 2018<br>(福原美穂/矢野沙織/元晴/西藤ヒロノブ/日野”JINO"賢二/菅野知明/Kaleb James)</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-25to.jpg" alt="たをやめオルケスタ">
-                        <p>たをやめオルケスタ</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-28tr.jpg" alt="高木里代子 feat.牧野雅己 from Inner City Jam Orchestra">
-                        <p>高木里代子 feat.牧野雅己 from Inner City Jam Orchestra</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-24.jpg" alt="バンバンバザール デラックス">
-                        <p>バンバンバザール デラックス</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-26.jpg" alt="こまっちゃクレズマ">
-                        <p>こまっちゃクレズマ</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-27.jpg" alt="MAY INOUE STEREO CHAMP">
-                        <p>MAY INOUE STEREO CHAMP</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-29sw.jpg" alt="THE SOUL HAWKERS feat JAMES ONODA">
-                        <p>THE SOUL HAWKERS feat JAMES ONODA</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-30.jpg" alt="仲田美穂CORAZON LATINO">
-                        <p>仲田美穂CORAZON LATINO</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-31lp.jpg" alt="LOOP POOL">
-                        <p>LOOP POOL</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-13.jpg" alt="Vermilion Field">
-                        <p>Vermilion Field</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-34.jpg" alt="EIKO">
-                        <p>EIKO</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-35.jpg" alt="Eiko Solaris Trio　～ ソラリスエイコトリオ ～">
-                        <p>Eiko Solaris Trio　～ ソラリスエイコトリオ ～</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-36.jpg" alt="DON ALMAS">
-                        <p>DON ALMAS</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-37.jpg" alt="飯田久美子(Vo)with TipHop">
-                        <p>飯田久美子(Vo)with TipHop</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-41om.jpg" alt="奥本めぐみFlamenco-Jazz-Funk TRIO">
-                        <p>奥本めぐみFlamenco-Jazz-Funk TRIO</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-42sa.jpg" alt="しばあみ">
-                        <p>しばあみ</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-45os2.jpg" alt="鈴木 勲 OMA SOUND">
-                        <p>鈴木 勲 OMA SOUND</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-43utk.jpg" alt="内田崇雄×tatsu×栗原務">
-                        <p>内田崇雄×tatsu×栗原務</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-48.jpg" alt="BimBomBam楽団">
-                        <p>BimBomBam楽団</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-49.jpg" alt="MASH弦楽団">
-                        <p>MASH弦楽団</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-50.jpg" alt="Tiny Rental Orchestra">
-                        <p>Tiny Rental Orchestra</p>
-                    </li>
-                    <li><img src="images/artists/2018/18-51.jpg" alt="Gypsy Jazz All Stars">
-                        <p>Gypsy Jazz All Stars</p>
-                    </li>
-                    <li><img src="images/artists/2018/19-52.jpg" alt="Cabbage &amp; Burdock">
-                        <p>Cabbage &amp; Burdock</p>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-xs-6">
+                    <button class="btn btn-danger btn-block fixed-top">
+                        <img src="img/top/icon-user.png" alt="User Icon"> ボランティア詳細 / 応募
+                    </button>
+                </div>
+                <div class="col-xs-6">
+                    <button class="btn btn-black btn-block">
+                        <img src="img/top/icon-briefcase.png" alt="Briefcase Icon"> スポンサー詳細 / 応募
+                    </button>
+                </div>
+            </div>
+            <div class="row grid-menu">
+                <div class="col-xs-6">
+                    <div class="menu-item">
+                        <div class="button">
+                            <img src="img/top/icon-time.png" alt="時計アイコン">
+                            <p>タイムテーブル</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="menu-item">
+                        <div class="button">
+                            <img src="img/top/icon-music.png" alt="時計アイコン">
+                            <p>アーティスト紹介</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="menu-item">
+                        <div class="button">
+                            <img src="img/top/icon-map.png" alt="時計アイコン">
+                            <p>アクセス</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="button">
+                        <img src="img/top/icon-cart.png" alt="時計アイコン">
+                        <p>公式グッズ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- オクトーバーフェス -->
+        <div class="container">
+            <img src="img/top/logo_october_gibier.png" alt="Briefcase Icon">
+        </div>
+        <!-- ソーシャルリンク -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 social-buttons">
+                    <button class="btn btn-black btn-block">
+                        <img src="img/top/logo_insta.png" alt="Briefcase Icon">
+                    </button>
+                </div>
+                <div class="col-xs-2 social-buttons">
+                    <button class="btn btn-black btn-block">
+                        <img src="img/top/logo_facebook.png" alt="Briefcase Icon">
+                    </button>
+
+                </div>
+                <div class="col-xs-2 social-buttons">
+                    <button class="btn btn-black btn-block">
+                        <img src="img/top/logo_x.png" alt="Briefcase Icon">
+                    </button>
+                </div>
+                <div class="col-xs-2 social-buttons">
+                    <button class="btn btn-black btn-block">
+                        <img src="img/top/logo_youtube.png" alt="Briefcase Icon">
+                    </button>
+                </div>
             </div>
         </div>
 
-        <script>
-            $(function () {
-                var arr = [];
-                $('#carousel ul li').each(function () {
-                    arr.push($(this).html());
-                });
-                arr.sort(function () {
-                    return Math.random() - Math.random();
-                });
-                $('#carousel ul').empty();
-                for (i = 0; i < arr.length; i++) {
-                    $('#carousel ul').append('<li>' + arr[i] + '</li>');
-                }
+    </main>
 
-                $("#carousel ul").slick({
-                    autoplay: true,
-                    slidesToShow: 1,
-                    centerMode: true,
-                    slidesToShow: 3,
-                    centerPadding: '60px',
-                    variableWidth: true,
-                    pauseOnHover: false,
-                    pauseOnFocus: false,
-                    responsive: [
-                        {
-                            breakpoint: 640,
-                            settings: {
-                                slidesToShow: 1,
-                                variableWidth: false,
-                                centerPadding: 0,
-                                centerMode: false,
-                                arrows: false
-                            }
-                        }
-                    ]
-                });
-            });
-        </script>
-
-        <!--@IGNORE:BEGIN-->
-        <img src="img/index/arigato.jpg" alt="たくさんの応援＆ご来場ありがとうございました！また来年、お会いしましょう！"
-            class="img-responsive center-block">
-        <!--@IGNORE:END-->
-        <!--@IGNORE:BEGIN-->
-        <div class="container" id="movie">
-            <iframe
-                src="https://www.youtube.com/embed/-RclmJrSNQE?rel=0&amp;controls=1&amp;showinfo=0&amp;loop=1&amp;playlist=53Gv8Z_0qP4&amp;playsinline=1"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <!--@IGNORE:END-->
-
-
-        <div class="container">
-            <article id="page-[*alias*]">
-                [*content*]
-            </article>
+    <!-- フッター -->
+    <footer class="text-center">
+        <!-- スポンサー -->
+        <div class="container text-center sponsor-banners">
+            <div class="row">
+                <div class="col-xs-3"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
+                <div class="col-xs-3"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
+                <div class="col-xs-3"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
+                <div class="col-xs-3"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
+            </div>
         </div>
 
-        <div class="pagetop"><a href="#top"><img src="images/btn_pagetop.png" alt="PAGE TOP"></a></div>
-        <div id="footerArea">
-            <section id="footerInfo">
-                <div class="container cf">
-                    <div class="column organizer">
-                        <h2>主催</h2>
-                        <p>すみだストリートジャズフェスティバル実行委員会<br>
-                            〒130-0005 東京都墨田区東駒形1-9-2</p>
+        <!-- ソーシャルリンク・各種リンク -->
+        <div class="footer text-center">
+            <!-- ソーシャルリンク -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2 social-buttons">
+                        <button class="btn btn-black btn-block">
+                            <img src="img/top/logo_insta.png" alt="Briefcase Icon"> Instagram
+                        </button>
                     </div>
-                    <div class="column contact">
-                        <h2>お問い合わせ</h2>
-                        <p><a href="[~8~]" class="over">メールフォーム</a></p>
+                    <div class="col-xs-2 social-buttons">
+                        <button class="btn btn-black btn-block">
+                            <img src="img/top/logo_facebook.png" alt="Briefcase Icon"> Facebook
+                        </button>
+
                     </div>
-                    <div class="column linkbanner">
-                        <!--<img src="images/linkbanner.jpg" alt="リンクバナー">-->
-                        [関連団体] <a href="https://ssjf.or.jp/" target="_blank">一般社団法人SSJF</a><br>
-                        <a href="https://ssjf.or.jp/article.html" target="_blank">&raquo; 定款・決算公告</a>
+                    <div class="col-xs-2 social-buttons">
+                        <button class="btn btn-black btn-block">
+                            <img src="img/top/logo_x.png" alt="Briefcase Icon"> X（旧Twitter）
+                        </button>
+                    </div>
+                    <div class="col-xs-2 social-buttons">
+                        <button class="btn btn-black btn-block">
+                            <img src="img/top/logo_youtube.png" alt="Briefcase Icon"> YouTube
+                        </button>
                     </div>
                 </div>
-            </section>
-            <section id="past">
-                <div class="container cf">
-                    <h2>過去のすみだジャズ</h2>
-                    <ul>
-                        <li><a href="/past/2010/">第1回 2010年</a></li>
-                        <li><a href="/past/2011/">第2回 2011年</a></li>
-                        <li><a href="/past/2012/">第3回 2012年</a></li>
-                        <li><a href="/past/2013/">第4回 2013年</a></li>
-                        <li><a href="/past/2014/">第5回 2014年</a></li>
-                        <li><a href="/past/2015/">第6回 2015年</a></li>
-                        <li><a href="/past/2016/">第7回 2016年</a></li>
-                        <li><a href="/past/2017/">第8回 2017年</a></li>
-                        <li><a href="/past/2018/">第9回 2018年</a></li>
-                        <li><a href="/past/2019/">第10回 2019年</a></li>
-                        <li><a href="/past/2020/">オンライン祭り 2020年</a></li>
-                        <li><a href="/past/2021/">2021年</a></li>
-                        <li><a href="/past/2022/">2022年</a></li>
-                        <li><a href="/past/2023/">2023年</a></li>
-                        <li><a href="/past/2024/">2024年</a></li>
-                    </ul>
+
+                <!-- 各リンク -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 text-left">
+                            <img src="img/top/logo_sumida_jazz.png" alt="ロゴ" class="logo">
+                            <p>すみだストリートジャズフェスティバル</p>
+                            <p>〒130-0005 東京都墨田区東駒形19-2 2階</p>
+                            <button class="btn btn-black">お問い合わせ</button>
+                            <p class="small-text">アーカイブ | プライバシーポリシー | 一般社団法人SSJF | 定款・資料公告</p>
+                        </div>
+                        <div class="col-md-5 text-left">
+                            <ul class="footer-links">
+                                <li>トップ</li>
+                                <li>お知らせ</li>
+                                <li>ボランティア募集</li>
+                                <li>スポンサー募集</li>
+                                <li>タイムテーブル</li>
+                                <li>アーティスト情報</li>
+                                <li>会場マップ・アクセス</li>
+                                <li>イベント情報</li>
+                                <li>公式グッズ</li>
+                                <li>募金・アンサム紹介</li>
+                                <li>ギャラリー</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 text-left">
+                            <img src="img/top/logo_october_gibier.png" alt="広告" class="ad-banner">
+                            <p class="small-text">&copy; すみだストリートジャズフェスティバル実行委員会</p>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <footer>
-                <p>[!Ditto?tpl=@CODE:<a href="[+url+]">[+pagetitle+]</a>　|　&documents=1,296,8&orderBy=`menuindex
-                    ASC`&showInMenuOnly=1!]</p>
-                <!--@IGNORE:BEGIN-->
-                <p>[!Ditto?tpl=@CODE:<a href="[+url+]">[+pagetitle+]</a>　|　&documents=144,189,191,10&orderBy=`menuindex
-                    ASC`&showInMenuOnly=1!]</p>
-                <p>[!Ditto?tpl=@CODE:<a
-                        href="[+url+]">[+pagetitle+]</a>　|　&parents=0&filter=`id,75,9`&showInMenuOnly=1&orderBy=`menuindex
-                    ASC`!]</p>
-                <!--@IGNORE:END-->
-                <p class="small">&copy;2010-2021 すみだストリートジャズフェスティバル実行委員会</p>
-            </footer>
+            </div>
         </div>
-    </div>
-
-    <div class="sb-slidebar sb-right">
-        <div class="sp">
-            <!--@IF:[*alias:is(player):then(1):else()*]>
-				<div><a data-hashtags="sumidajazz" data-count="none" class="twitter-share-button" href="https://twitter.com/share" data-url="[!パーマリンク!]?bn=[*bandno*]">Tweet</a></div>
-<@ELSE>
-				<div><a data-hashtags="sumidajazz" data-count="none" class="twitter-share-button" href="https://twitter.com/share">Tweet</a></div>
-<@ENDIF-->
-            <div data-layout="button" data-share="true" class="fb-like">&nbsp;</div>
-        </div>
-        <ul>
-            <li><a href="[~1~]">TOP PAGE</a></li>
-            <li><a href="[~75~]">VOLUNTEER</a></li>
-            <li><a href="[~856~]">ENTRY</a></li>
-            <li><a href="[~676~]">GOODS</a></li>
-            <li><a href="[~726~]">ARTISTS</a></li>
-            <li><a href="[~1001~]">TIMETABLE</a></li>
-            <li><a href="[~1003~]">EVENT</a></li>
-            <li><a href="[~869~]">SOOF/GIBIER</a></li>
-            <li><a href="[~941~]">隅田公園会場</a></li>
-            <li><a href="[~769~]">GALLERY</a></li>
-            <li><a href="[~755~]">忘れ物</a></li>
-            <li><a href="[~9~]">SPONSOR</a></li>
-            <li><a href="https://test-bm.my.canva.site/2024sumidajazz" target="_new">PAMPHLET</a></li>
-            <li><a href="[~982~]">ACCESS</a></li>
-            <li><a href="[~296~]">ABOUT</a></li>
-            <li><a href="[~8~]">CONTACT</a></li>
-            <!--@IGNORE:BEGIN-->
-            <li><a href="[~769~]">GALLERY</a></li>
-            <li><a href="[~774~]">ENTRY</a></li>
-            <li><a href="[~850~]">ｸﾘｽﾏｽﾗｲﾌﾞ</a></li>
-            <li><a href="[~714~]">DOWNLOAD</a></li>
-            <li><a href="[~75~]">VOLUNTEER</a></li>
-            <li><a href="[~75~]">VOLUNTEER</a></li>
-            <li><a href="[~683~]">8/14 ZERO</a></li>
-            <li><a href="[~615~]">ENTRY</a></li>
-            <li><a href="[~460~]">TIMETABLE</a></li>
-            <li><a href="[~468~]">10th SPECIAL</a></li>
-            <li><a href="[~462~]">EVENT</a></li>
-            <li><a href="[~441~]">GOODS</a></li>
-            <li><a href="[~453~]">MESSAGES</a></li>
-            <li><a href="[~450~]">ECO</a></li>
-            <li><a href="[~477~]">ACCESS</a></li>
-            <li><a href="[~421~]">PHOTO CONTEST</a></li>
-            <li class="eng"><a href="[~339~]">ENGLISH</a></li>
-            <!--@IGNORE:END-->
-        </ul>
-    </div>
-
+    </footer>
 </body>
 
 </html>
