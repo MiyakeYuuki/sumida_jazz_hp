@@ -284,6 +284,12 @@
     padding: 10px 20px;
     border: none;
     font-size: 14px;
+    border-radius: 0px;
+}
+
+.button--contact {
+    width: 100%;
+    padding: 20px;
 }
 
 .button--black:hover {
@@ -608,14 +614,13 @@
 /*========================================
     フッターセクション
   ========================================*/
-.footer {
-    background-color: var(--color-black);
-    color: var(--color-white);
-    padding: 20px 0;
-}
-
 .footer a {
     color: var(--color-white);
+}
+
+.sponsor-section {
+    padding: 50px 0px;
+    background-color: #CCCCCC;
 }
 
 .sponsor-section img {
@@ -633,12 +638,22 @@
 }
 
 .footer__logo {
-    width: auto;
+    width: 100%;
     margin-bottom: 10px;
 }
 
 .footer__small-text {
-    font-size: 12px;
+    font-size: 10px;
+    display: inline;
+    margin: 0 3px;
+}
+
+.footer__small-text a {
+    color: var(--color-black);
+}
+
+.footer__small-text a:hover {
+    text-decoration: underline;
 }
 
 .footer__links {
@@ -650,7 +665,88 @@
     margin-bottom: 5px;
 }
 
+.footer__link-item a {
+    color: var(--color-black);
+    /* 白文字に */
+    text-decoration: none;
+    /* 下線を消す */
+}
+
+.footer__link-item a:hover {
+    text-decoration: underline;
+}
+
 .footer__ad-banner {
     width: 100%;
     max-width: 200px;
+}
+
+.footer__copylight {
+    font-size: 6px;
+    color: var(--color-black);
+    display: inline;
+}
+
+/*--------------------------------------
+  SNSセクション (Block: sns-section)
+---------------------------------------*/
+.sns-section {
+    background-color: #000;
+    /* 背景色：黒 */
+    padding: 20px 0;
+    /* 上下余白 */
+}
+
+.sns-section__item {
+    border: 1px solid #fff;
+    /* 枠線：白 */
+    text-align: center;
+    /* 中央寄せ */
+    padding: 20px;
+    /* 余白 */
+    margin-bottom: 20px;
+    /* カード同士の間隔 */
+    display: flex;
+    /* 横並びに配置 */
+    align-items: center;
+    /* 垂直方向の中央揃え */
+    height: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sns-section__icon {
+    display: block;
+    margin: 0 auto 10px;
+    /* 画像を中央寄せ、下に余白 */
+    max-width: 100%;
+    /* アイコンサイズを調整 */
+}
+
+.sns-section__text {
+    color: #fff;
+    /* テキストカラー：白 */
+    font-size: 16px;
+    margin: 0;
+    /* p要素のデフォルト余白をリセット */
+}
+
+/*--------------------------------------
+    バナーセクション (Block: banner-section)
+  ---------------------------------------*/
+.banner-section {
+    background-color: #000;
+    /* 背景色：黒 */
+    padding: 20px 0;
+    /* 上下余白 */
+}
+
+.banner-section__image {
+    display: block;
+    margin: 0 auto;
+    /* 画像を中央寄せ */
+    max-width: 100%;
+    /* 親要素に合わせて縮小 */
+    margin-left: 15px;
+    margin-right: 15px;
 }
