@@ -1,4 +1,6 @@
-/* 共通で使用するカラーコード */
+/*========================================
+  共通カラー
+========================================*/
 :root {
     --color-red: #D61619;
     --color-black: #151515;
@@ -6,136 +8,589 @@
     --color-base: #F2F2F2;
 }
 
-/* ヘッダーのスタイル */
-.navbar {
+/*========================================
+    ヘッダーセクション
+  ========================================*/
+.header__navbar {
     background: #fff;
     border-bottom: 1px solid #ddd;
     padding: 10px 20px;
 }
 
-.navbar-brand {
+.header__brand {
     display: flex;
     align-items: center;
     padding: 0;
 }
 
-.logo {
+.header__brand-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header__logo {
     height: 50px;
     margin-right: 10px;
 }
 
-.festival-text {
+.header__festival-text {
     font-size: 14px;
     line-height: 1.4;
 }
 
-.year {
+.header__title {
+    font-size: 16px;
     font-weight: bold;
+}
+
+/*========================================
+    Menuボタンセクション
+  ========================================*/
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.menu__link {
+    display: inline-flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.menu__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.menu__text {
+    font-size: 14px;
+    color: #333;
+}
+
+/*========================================
+    モーダルセクション
+  ========================================*/
+.menu__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9998;
+}
+
+.menu__overlay.is-active {
+    display: block;
+}
+
+.menu__modal {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.menu__modal-close {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.menu__modal-content {
+    margin-top: 20px;
+}
+
+.menu__modal-logo {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.menu__modal-festival-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.menu__modal-festival-date {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.menu__modal-btn {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.menu__modal-list {
+    margin: 0;
+    padding: 0;
+}
+
+.menu__modal-item {
+    margin-bottom: 10px;
+}
+
+.menu__modal-item a {
+    color: #333;
+    text-decoration: none;
     font-size: 16px;
 }
 
-.btn-black {
-    background: black;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    font-size: 14px;
+.menu__modal-bottom {
+    margin-top: 30px;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    height: 50px;
-    color: white;
-    background-color: green;
-    padding-inline: 15px;
-    align-content: center;
+.menu__modal-banner {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-#sampleAffix {
-    width: 480px;
+.menu__modal-banner p {
+    margin-bottom: 10px;
 }
 
-#sampleAffix.affix {
-    top: 0px;
-}
-
-/* フッターのスタイル */
-.footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-}
-
-.footer a {
-    color: #fff;
-}
-
-.sponsor-banners img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-}
-
-.social-buttons .btn {
-    width: 150px;
-    margin: 5px;
-}
-
-/* 固定要素のスタイル */
-.fixed-menu {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background: black;
-    color: white;
-    padding: 10px;
-    z-index: 1000;
-}
-
-.fixed-volunteer {
+/*========================================
+    固定要素（ボランティアボタン）
+  ========================================*/
+.volunteer--fixed {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background: red;
-    color: white;
+    background: var(--color-red);
+    color: var(--color-white);
     padding: 10px;
     z-index: 1000;
 }
 
-/* Topページ用ボタンのスタイル */
+/*========================================
+    Topボタン・グリッドメニューセクション
+  ========================================*/
+.fixed-top-btn {}
 
-.button {
+.grid-menu-section {
+    margin-top: 20px;
+}
+
+.grid-menu__item {}
+
+.grid-menu__button {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 120px;
     height: 120px;
-    background-color: white;
+    background-color: var(--color-white);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-family: Arial, sans-serif;
 }
 
-.button img {
+.grid-menu__button img {
     width: 40px;
     height: 40px;
     margin-bottom: 8px;
 }
 
-.button p {
+.grid-menu__button p {
     margin: 0;
     font-size: 14px;
     font-weight: bold;
-    color: #000;
+    color: var(--color-black);
 }
 
-/* ボタンのカスタムクラス */
-.btn-danger {
-    background-color: var(--color-red) !important;
-    border-color: var(--color-red) !important;
+/*========================================
+    ボタン（黒）のカスタムスタイル
+  ========================================*/
+.button--black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+}
+
+.button--black:hover {
+    background-color: #333;
+}
+
+/*========================================
+    NEWSセクション
+  ========================================*/
+.news-section {
+    margin-top: 20px;
+}
+
+.news-section__title {
+    font-size: 24px;
+}
+
+.news-section__title span {
+    font-size: 16px;
+    color: #666;
+}
+
+.news-section__list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-section__item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.news-section__date {
+    font-size: 14px;
+    color: #666;
+    margin-right: 10px;
+}
+
+.news-section__tag {
+    background-color: #ddd;
+    padding: 3px 6px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.news-section__text {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/*========================================
+    フェスティバルセクション
+  ========================================*/
+.festival {
+    text-align: center;
+}
+
+.festival__image {
+    position: relative;
+}
+
+.festival__img {
+    width: 100%;
+    height: auto;
+}
+
+.festival__logo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+}
+
+.festival__content {
+    margin-top: 20px;
+}
+
+.festival__title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.festival__title--highlight {
+    color: var(--color-red);
+}
+
+.festival__title--year {
+    font-size: 30px;
+}
+
+.festival__subtitle {
+    font-size: 18px;
+    color: #666;
+}
+
+.festival__info {
+    margin-top: 20px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.festival__date {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.festival__date--small {
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.festival__location {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/*========================================
+    ABOUT USセクション
+  ========================================*/
+.about {
+    padding: 50px 0;
+}
+
+.about__content {}
+
+.about__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about__subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about__text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about__highlight {
+    color: var(--color-red);
+    font-weight: bold;
+}
+
+.about__button {
+    display: inline-block;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.about__button:hover {
+    background-color: #333;
+}
+
+.about__image img {
+    border-radius: 5px;
+}
+
+/*========================================
+    INFORMATIONセクション
+  ========================================*/
+.info {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.info__title {
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.info__subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.info__box {
+    background-color: #222;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #fff;
+}
+
+.info__icon {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.info__box-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info__box-subtitle {
+    font-size: 14px;
+}
+
+.info__banner {
+    text-align: center;
+}
+
+.info__banner-img {
+    width: 100%;
+    height: auto;
+}
+
+/*========================================
+    ACCESSセクション
+  ========================================*/
+.access {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+}
+
+.access__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.access__subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.access__divider {
+    border-top: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.access__map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.access__buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.access__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.access__button:hover {
+    background-color: #333;
+}
+
+.access__button .glyphicon {
+    margin-left: 10px;
+}
+
+/*========================================
+    GOODSセクション
+  ========================================*/
+.goods {
+    padding: 50px 0;
+}
+
+.goods__title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.goods__subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.goods__description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.goods__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.goods__image {
+    width: 48%;
+}
+
+.goods__buttons {
+    margin-top: 30px;
+}
+
+.goods__button {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*========================================
+    フッターセクション
+  ========================================*/
+.footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 20px 0;
+}
+
+.footer a {
+    color: var(--color-white);
+}
+
+.sponsor-section img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.footer__content {
+    padding: 20px 0;
+}
+
+.footer__info {
+    text-align: left;
+}
+
+.footer__logo {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.footer__small-text {
+    font-size: 12px;
+}
+
+.footer__links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__link-item {
+    margin-bottom: 5px;
+}
+
+.footer__ad-banner {
+    width: 100%;
+    max-width: 200px;
 }
