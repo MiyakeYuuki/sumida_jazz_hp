@@ -68,9 +68,6 @@
                         <a href="#" class="header__brand-link">
                             <img src="img/top/logo_sumida_jazz.png" alt="Sumida Street Jazz Festival"
                                 class="header__logo">
-                            <span class="header__festival-text">
-                                <span class="header__title">すみだストリートジャズフェスティバル</span>
-                            </span>
                         </a>
                     </div>
                 </div>
@@ -82,7 +79,6 @@
                 <div class="row">
                     <div class="col-xs-12 text-right">
                         <a href="#" class="menu__link js-menu-open">
-                            <img src="img/top/sample.png" alt="Menu Icon" class="menu__icon">
                             <span class="menu__text">MENU</span>
                         </a>
                     </div>
@@ -94,38 +90,65 @@
             <div class="menu__overlay js-menu-overlay">
                 <div class="menu__modal container">
                     <!-- 閉じるボタン -->
-                    <div class="row">
-                        <div class="col-xs-12 text-right">
-                            <button type="button" class="menu__modal-close js-menu-close">CLOSE</button>
-                        </div>
+                    <div class="row text-right">
+                        <a href="#" class="menu__link js-menu-close">
+                            <span class="menu__text">CLOSE</span>
+                        </a>
                     </div>
                     <!-- モーダルコンテンツ（左：ロゴ・日付・ボタン、中央：メニューリスト） -->
                     <div class="row menu__modal-content">
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <img src="img/top/logo_sumida_jazz.png" alt="Festival Logo" class="menu__modal-logo">
                             <p class="menu__modal-festival-name">すみだストリートジャズフェスティバル</p>
                             <p class="menu__modal-festival-date">2025.10.18 sat - 10.19 sun</p>
-                            <a href="#" class="btn btn-danger menu__modal-btn">ボランティア詳細/応募</a>
-                            <a href="#" class="btn btn-default menu__modal-btn">スポンサー詳細/応募</a>
-                            <img src="img/top/logo_october_gibier.png" alt="Festival Logo" class="menu__modal-logo">
+                            <button class="btn button button--volunteer">
+                                <div class="col-sm-2">
+                                    <img class="button__icon" src="img/top/icon-user.png" alt="ボランティアアイコン">
+                                </div>
+                                <div class="col-sm-1">
+                                    <span class="button__vline--volunteer"></span>
+                                </div>
+                                <div class="col-sm-9">
+                                    <span class="button__text">ボランティア詳細 / 応募</span>
+                                </div>
+                            </button>
+                            <button class="btn button button--sponsor">
+                                <div class="col-sm-2">
+                                    <img class="button__icon" src="img/top/icon-briefcase.png" alt="ボランティアアイコン">
+                                </div>
+                                <div class="col-sm-1">
+                                    <span class="button__vline--sponsor"></span>
+                                </div>
+                                <div class="col-sm-9">
+                                    <span class="button__text">スポンサー詳細/応募</span>
+                                </div>
+                            </button>
+                            <img src="img/top/logo_october_gibier.png" alt="Festival Logo"
+                                class="menu__modal-logo-gibier">
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <ul class="menu__modal-list list-unstyled">
-                                <li class="menu__modal-item"><a href="#">TOP <span
-                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#"><span>TOP</span>
+                                        <span class="glyphicon glyphicon-menu-right"></span></a></li>
                                 <li class="menu__modal-item"><a href="#">お知らせ <span
                                             class="glyphicon glyphicon-menu-right"></span></a></li>
                                 <li class="menu__modal-item"><a href="#">タイムテーブル <span
                                             class="glyphicon glyphicon-menu-right"></span></a></li>
                                 <li class="menu__modal-item"><a href="#">アーティスト情報 <span
                                             class="glyphicon glyphicon-menu-right"></span></a></li>
-                                <li class="menu__modal-item"><a href="#">出演会場 <span
-                                            class="glyphicon glyphicon-menu-right"></span></a></li>
                                 <li class="menu__modal-item"><a href="#">パンフレット <span
                                             class="glyphicon glyphicon-menu-right"></span></a></li>
                                 <li class="menu__modal-item"><a href="#">イベント情報 <span
                                             class="glyphicon glyphicon-menu-right"></span></a></li>
-                                <li class="menu__modal-item"><a href="#">飲食・アクセス情報 <span
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="menu__modal-list list-unstyled">
+                                <li class="menu__modal-item"><a href="#">公式グッズ <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#">募集・アンセム紹介 <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#">ギャラリー <span
                                             class="glyphicon glyphicon-menu-right"></span></a></li>
                                 <li class="menu__modal-item"><a href="#">アクセス <span
                                             class="glyphicon glyphicon-menu-right"></span></a></li>
@@ -136,23 +159,34 @@
                     </div>
                     <!-- モーダル下部：スポンサー・バナー -->
                     <div class="row menu__modal-bottom">
-                        <div class="col-sm-4">
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-2">
                             <div class="menu__modal-banner">
-                                <p>スポンサーバナー</p>
                                 <img src="img/top/banner_sponsor.png" alt="Banner 1" class="img-responsive">
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-2">
                             <div class="menu__modal-banner">
-                                <p>スポンサーバナー</p>
                                 <img src="img/top/banner_sponsor.png" alt="Banner 2" class="img-responsive">
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-2">
                             <div class="menu__modal-banner">
-                                <p>スポンサーバナー</p>
                                 <img src="img/top/banner_sponsor.png" alt="Banner 3" class="img-responsive">
                             </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="menu__modal-banner">
+                                <img src="img/top/banner_sponsor.png" alt="Banner 4" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="menu__modal-banner">
+                                <img src="img/top/banner_sponsor.png" alt="Banner 5" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
                         </div>
                     </div>
                 </div>

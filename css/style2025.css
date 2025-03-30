@@ -13,7 +13,6 @@
   ========================================*/
 .header__navbar {
     background: #fff;
-    border-bottom: 1px solid #ddd;
     padding: 10px 20px;
 }
 
@@ -27,10 +26,11 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+    margin-top: -5px;
 }
 
 .header__logo {
-    height: 50px;
+    height: 70px;
     margin-right: 10px;
 }
 
@@ -56,13 +56,11 @@
 
 .menu__link {
     display: inline-flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px;
+    background-color: var(--color-black);
+    padding: 15px;
     text-decoration: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin: 10px;
+    border: 1px solid var(--color-black);
+    margin-top: 0;
 }
 
 .menu__icon {
@@ -73,7 +71,7 @@
 
 .menu__text {
     font-size: 14px;
-    color: #333;
+    color: var(--color-white);
 }
 
 /*========================================
@@ -102,33 +100,38 @@
     position: relative;
 }
 
-.menu__modal-close {
-    background: none;
-    border: none;
-    font-size: 16px;
-    color: #333;
-    cursor: pointer;
-}
-
 .menu__modal-content {
     margin-top: 20px;
 }
 
 .menu__modal-logo {
-    width: 100%;
-    max-width: 200px;
+    display: block;
+    width: 20%;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu__modal-logo-gibier {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu__modal-festival-name {
     font-size: 18px;
     font-weight: bold;
     margin: 5px 0;
+    text-align: center;
 }
 
 .menu__modal-festival-date {
     font-size: 14px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .menu__modal-btn {
@@ -143,12 +146,17 @@
 
 .menu__modal-item {
     margin-bottom: 10px;
+    border-bottom: 1px solid var(--color-black);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .menu__modal-item a {
+    display: flex;
     color: #333;
     text-decoration: none;
     font-size: 16px;
+    justify-content: space-between;
 }
 
 .menu__modal-bottom {
@@ -162,6 +170,58 @@
 
 .menu__modal-banner p {
     margin-bottom: 10px;
+}
+
+/*-------------------------------------
+  ボタン共通スタイル (Block: "button")
+--------------------------------------*/
+.button {
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 30px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* ボタンの中のアイコン要素 (Element: "button__icon") */
+.button__icon {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+/* ボタンの中のテキスト要素 (Element: "button__text") */
+.button__text {
+    text-align: center;
+}
+
+/*-------------------------------------
+    ボタンバリエーション (Modifier)
+  --------------------------------------*/
+
+/* ボランティア用ボタン (Modifier: "--volunteer") */
+.button--volunteer {
+    background-color: #E60000;
+    color: #ffffff;
+}
+
+/* ボタンとテキストの間の縦線 */
+.button__vline--volunteer {
+    border-right: 1px solid #E15B5D;
+}
+
+/* スポンサー用ボタン (Modifier: "--sponsor") */
+.button--sponsor {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* ボタンとテキストの間の縦線 */
+.button__vline--sponsor {
+    border-right: 1px solid #3C3C3C;
 }
 
 /*========================================

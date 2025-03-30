@@ -1,0 +1,7 @@
+header > h1 {
+letter-spacing: 0;
+}
+
+#page-timetable .stage ul li .time {
+width: 10em;
+}
