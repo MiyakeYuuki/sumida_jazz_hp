@@ -69,6 +69,9 @@
                             <img src="img/top/logo_sumida_jazz.png" alt="Sumida Street Jazz Festival"
                                 class="header__logo">
                         </a>
+                        <span class="bold-text">
+                            2025<br />すみだストリートジャズフェスティバル
+                        </span>
                     </div>
                 </div>
             </div>
@@ -197,24 +200,50 @@
     <!-- メインセクション -->
     <main class="main">
         <!-- 追従用ボランティアボタン（固定） -->
-        <div class="volunteer--fixed">ボランティア詳細/募集</div>
+        <button class="btn button_fixed button--volunteer volunteer--fixed">
+            <div class="col-sm-2">
+                <img class="button__icon" src="img/top/icon-user.png" alt="ボランティアアイコン">
+            </div>
+            <div class="col-sm-1">
+                <span class="button__vline--volunteer"></span>
+            </div>
+            <div class="col-sm-9">
+                <span class="button__text">ボランティア詳細 / 応募</span>
+            </div>
+        </button>
 
         <!-- Topボタン・グリッドメニューセクション -->
         <section class="top-buttons-section">
-            <div class="container">
+            <!-- 左側 -->
+            <div class="col-sm-4">
+                <!-- 各種ボタン -->
                 <div class="row">
-                    <div class="col-xs-6">
-                        <button class="btn btn-danger btn-block fixed-top-btn">
-                            <img src="img/top/icon-user.png" alt="User Icon"> ボランティア詳細 / 応募
-                        </button>
-                    </div>
-                    <div class="col-xs-6">
-                        <button class="btn button--black btn-block">
-                            <img src="img/top/icon-briefcase.png" alt="Briefcase Icon"> スポンサー詳細 / 応募
-                        </button>
-                    </div>
+                    <button class="btn button button--volunteer">
+                        <div class="col-sm-2">
+                            <img class="button__icon" src="img/top/icon-user.png" alt="ボランティアアイコン">
+                        </div>
+                        <div class="col-sm-1">
+                            <span class="button__vline--volunteer"></span>
+                        </div>
+                        <div class="col-sm-9">
+                            <span class="button__text">ボランティア詳細 / 応募</span>
+                        </div>
+                    </button>
                 </div>
-                <div class="row grid-menu-section">
+                <div class="row">
+                    <button class="btn button button--sponsor">
+                        <div class="col-sm-2">
+                            <img class="button__icon" src="img/top/icon-briefcase.png" alt="ボランティアアイコン">
+                        </div>
+                        <div class="col-sm-1">
+                            <span class="button__vline--sponsor"></span>
+                        </div>
+                        <div class="col-sm-9">
+                            <span class="button__text">スポンサー詳細/応募</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="row">
                     <div class="col-xs-6">
                         <div class="grid-menu__item">
                             <div class="grid-menu__button">
@@ -231,6 +260,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-xs-6">
                         <div class="grid-menu__item">
                             <div class="grid-menu__button">
@@ -248,74 +279,70 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- オクトーバーフェストセクション -->
-        <section class="october-fest-section">
-            <div class="container">
-                <img src="img/top/logo_october_gibier.png" alt="October Fest Logo">
-            </div>
-        </section>
-
-        <!-- ソーシャルリンクセクション -->
-        <section class="social-links-section">
-            <div class="container">
                 <div class="row">
-                    <div class="col-xs-2">
-                        <button class="btn button--black btn-block">
-                            <img src="img/top/logo_insta.png" alt="Instagram">
-                        </button>
+                    <!-- オクトーバーフェストセクション -->
+                    <div class="col-xs-12">
+                        <a href="#"><img src="img/top/logo_october_gibier.png" alt="October Fest Logo"
+                                class="img-responsive"></a>
                     </div>
-                    <div class="col-xs-2">
-                        <button class="btn button--black btn-block">
-                            <img src="img/top/logo_facebook.png" alt="Facebook">
-                        </button>
-                    </div>
-                    <div class="col-xs-2">
-                        <button class="btn button--black btn-block">
-                            <img src="img/top/logo_x.png" alt="X">
-                        </button>
-                    </div>
-                    <div class="col-xs-2">
-                        <button class="btn button--black btn-block">
-                            <img src="img/top/logo_youtube.png" alt="YouTube">
-                        </button>
-                    </div>
+                </div>
+                <div class="row">
+                    <!-- ソーシャルリンクセクション -->
+                    <section class="social-links-section">
+                        <div class="row">
+                            <div class="col-xs-4"></div>
+                            <div class="col-xs-1">
+                                <a href="#"><img src="img/top/logo_insta_bk.png" alt="Instagram"></a>
+                            </div>
+                            <div class="col-xs-1">
+                                <a href="#"><img src="img/top/logo_facebook_bk.png" alt="Facebook"></a>
+                            </div>
+                            <div class="col-xs-1">
+                                <a href="#"><img src="img/top/logo_x_bk.png" alt="X"></a>
+                            </div>
+                            <div class="col-xs-1">
+                                <a href="#"><img src="img/top/logo_youtube_bk.png" alt="YouTube"></a>
+                            </div>
+                            <div class="col-xs-4"></div>
+                        </div>
+                    </section>
                 </div>
             </div>
-        </section>
-
-        <!-- フェスティバル画像セクション -->
-        <section class="festival-section">
-            <div class="festival">
-                <div class="festival__image">
-                    <img src="img/top/photo_sumida_jazz_1.png" alt="Sumida Street Jazz Festival" class="festival__img">
-                    <div class="festival__logo">
-                        <img src="img/top/logo_sumida_jazz.png" alt="Festival Logo">
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="festival__content text-center">
-                        <h1 class="festival__title">
-                            <span class="festival__title--main">SUMIDA STREET</span>
-                            <span class="festival__title--highlight">J</span>
-                            <span class="festival__title--main">AZZ FESTIVAL</span>
-                            <span class="festival__title--year">2025</span>
-                        </h1>
-                        <p class="festival__subtitle">すみだストリートジャズフェスティバル</p>
-                    </div>
-                    <div class="festival__info text-center">
-                        <div class="festival__date">
-                            <span class="festival__date--day">10.18</span>
-                            <span class="festival__date--small">Sat</span>
-                            -
-                            <span class="festival__date--day">10.19</span>
-                            <span class="festival__date--small">Sun</span>
+            <!-- 右側 -->
+            <div class="col-sm-8">
+                <!-- フェスティバル画像セクション -->
+                <section class="festival-section">
+                    <div class="festival">
+                        <div class="festival__image">
+                            <img src="img/top/photo_sumida_jazz_1.png" alt="Sumida Street Jazz Festival"
+                                class="festival__img">
+                            <div class="festival__logo">
+                                <img src="img/top/logo_sumida_jazz.png" alt="Festival Logo">
+                            </div>
                         </div>
-                        <p class="festival__location">入場無料 @錦糸公園 他</p>
+                        <div class="container">
+                            <div class="festival__content text-center">
+                                <h1 class="festival__title">
+                                    <span class="festival__title--main">SUMIDA STREET</span>
+                                    <span class="festival__title--highlight">J</span>
+                                    <span class="festival__title--main">AZZ FESTIVAL</span>
+                                    <span class="festival__title--year">2025</span>
+                                </h1>
+                                <p class="festival__subtitle">すみだストリートジャズフェスティバル</p>
+                            </div>
+                            <div class="festival__info text-center">
+                                <div class="festival__date">
+                                    <span class="festival__date--day">10.18</span>
+                                    <span class="festival__date--small">Sat</span>
+                                    -
+                                    <span class="festival__date--day">10.19</span>
+                                    <span class="festival__date--small">Sun</span>
+                                </div>
+                                <p class="festival__location">入場無料 @錦糸公園 他</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
         </section>
 
