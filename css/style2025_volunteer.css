@@ -1,0 +1,151 @@
+/* =================================
+   ボランティアヘッダーセクション
+   ================================= */
+.volunteer {
+    text-align: left;
+    margin: 30px 0;
+}
+
+.volunteer__title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.volunteer__subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* =================================
+     ナビゲーションセクション
+     ================================= */
+.volunteer-nav {
+    margin: 20px 0;
+    text-align: left;
+    /* 必要に応じて調整 */
+}
+
+/* タイトル（"参加までの流れ"） */
+.volunteer-nav__title {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 0;
+    display: inline-block;
+    /* 矢印アイコンを右側に配置するため */
+    position: relative;
+}
+
+/* 矢印アイコン (CSSで▼を再現) */
+.volunteer-nav__icon {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    /* ▼の色 */
+    vertical-align: middle;
+}
+
+/* 下線 */
+.volunteer-nav__divider {
+    margin-top: 5px;
+    border-color: #333;
+    /* 線の色 */
+}
+
+.menu__modal-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--color-black);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.menu__modal-item a {
+    display: flex;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+.menu__modal-list {
+    margin: 0;
+    padding: 0;
+}
+
+/* =================================
+   バナーセクション (画像不使用)
+   ================================= */
+/* =================================
+   バナーセクション (画像不使用・背景はコンテナ内に限定)
+   ================================= */
+.volunteer-banner {
+    /* セクション自体は全幅でもOK、背景色は付けずコンテナの幅に合わせる */
+    margin-bottom: 40px;
+}
+
+.volunteer-banner__wrap {
+    background-color: #ddd;
+    /* 背景色はコンテナ内の要素に適用 */
+    text-align: center;
+    padding: 20px 0;
+    /* 上下の余白 */
+    /* 必要に応じて左右のパディングも追加可能 */
+}
+
+.volunteer-banner__title {
+    font-size: 16px;
+    font-weight: normal;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+/* →アイコン */
+.volunteer-banner__icon {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #333;
+    /* →の色 */
+    vertical-align: middle;
+}
+
+/* =================================
+   ボランティア情報セクション
+   ================================= */
+.volunteer-info {
+    margin: 40px 0;
+    /* 全体の文字行間などを調整したい場合 */
+    /* line-height: 1.8; */
+}
+
+/* レイアウト全体 */
+.volunteer-info__content {
+    /* rowに対しての追加設定があれば記述 */
+}
+
+/* 左側テキスト */
+.volunteer-info__text p {
+    margin-bottom: 20px;
+}
+
+/* 右側の仮画像領域 */
+.volunteer-info__image-wrap {
+    /* 必要に応じて調整 */
+    text-align: center;
+}
+
+/* 右側の画像領域 */
+.volunteer-info__image-wrap {
+    text-align: center;
+    /* 必要に応じて余白等調整 */
+}
