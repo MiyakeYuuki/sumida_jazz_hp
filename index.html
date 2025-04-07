@@ -311,35 +311,49 @@
             <!-- 右側 -->
             <div class="col-sm-8">
                 <!-- フェスティバル画像セクション -->
-                <section class="festival-section">
-                    <div class="festival">
-                        <div class="festival__image">
-                            <img src="img/top/photo_sumida_jazz_1.png" alt="Sumida Street Jazz Festival"
-                                class="festival__img">
-                            <div class="festival__logo">
-                                <img src="img/top/logo_sumida_jazz.png" alt="Festival Logo">
+                <section class="festival">
+                    <!-- Bootstrap Carousel (フェスティバル画像スライドショー) -->
+                    <div id="festivalCarousel" class="carousel slide festival__carousel" data-ride="carousel">
+                        <!-- インジケーター -->
+                        <ol class="carousel-indicators festival__carousel-indicators">
+                            <li data-target="#festivalCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#festivalCarousel" data-slide-to="1"></li>
+                            <li data-target="#festivalCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- スライド群 -->
+                        <div class="carousel-inner festival__carousel-inner" role="listbox">
+                            <div class="item active festival__carousel-item">
+                                <img src="img/top/photo_sumida_jazz_1.png" alt="Sample Image 1" class="festival__img">
+                            </div>
+                            <div class="item festival__carousel-item">
+                                <img src="img/top/photo_sumida_jazz_2.png" alt="Sample Image 2" class="festival__img">
+                            </div>
+                            <div class="item festival__carousel-item">
+                                <img src="img/top/photo_sumida_jazz_3.png" alt="Sample Image 3" class="festival__img">
                             </div>
                         </div>
-                        <div class="container">
-                            <div class="festival__content text-center">
-                                <h1 class="festival__title">
-                                    <span class="festival__title--main">SUMIDA STREET</span>
-                                    <span class="festival__title--highlight">J</span>
-                                    <span class="festival__title--main">AZZ FESTIVAL</span>
-                                    <span class="festival__title--year">2025</span>
-                                </h1>
-                                <p class="festival__subtitle">すみだストリートジャズフェスティバル</p>
+                    </div>
+
+                    <!-- フェスティバル コンテンツ -->
+                    <div class="container">
+                        <div class="festival__content text-center">
+                            <h1 class="festival__title">
+                                <span class="festival__title--main">SUMIDA STREET</span>
+                                <span class="festival__title--highlight">J</span>
+                                <span class="festival__title--main">AZZ FESTIVAL</span>
+                                <span class="festival__title--year">2025</span>
+                            </h1>
+                            <p class="festival__subtitle">すみだストリートジャズフェスティバル</p>
+                        </div>
+                        <div class="festival__info text-center">
+                            <div class="festival__date">
+                                <span class="festival__date--day">10.18</span>
+                                <span class="festival__date--small">Sat</span>
+                                -
+                                <span class="festival__date--day">10.19</span>
+                                <span class="festival__date--small">Sun</span>
                             </div>
-                            <div class="festival__info text-center">
-                                <div class="festival__date">
-                                    <span class="festival__date--day">10.18</span>
-                                    <span class="festival__date--small">Sat</span>
-                                    -
-                                    <span class="festival__date--day">10.19</span>
-                                    <span class="festival__date--small">Sun</span>
-                                </div>
-                                <p class="festival__location">入場無料 @錦糸公園 他</p>
-                            </div>
+                            <p class="festival__location">入場無料 @錦糸公園 他</p>
                         </div>
                     </div>
                 </section>

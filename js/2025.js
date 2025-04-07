@@ -17,3 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay.classList.remove('is-active');
     });
 });
+
+$(document).ready(function () {
+    $('#festivalCarousel').carousel({
+        interval: 3000 // 3秒ごとに切り替え
+    });
+});

@@ -366,10 +366,6 @@ body {
     text-align: center;
 }
 
-.festival__image {
-    position: relative;
-}
-
 .festival__img {
     width: 100%;
     height: auto;
@@ -768,4 +764,83 @@ body {
     /* 親要素に合わせて縮小 */
     margin-left: 15px;
     margin-right: 15px;
+}
+
+/*========================================
+  フェスティバルセクション (Festival Section)
+========================================*/
+.festival {
+    position: relative;
+    text-align: center;
+}
+
+/* スライドショー用の Carousel カスタムスタイル */
+/* Carousel 全体 */
+.festival__carousel {
+    margin-bottom: 30px;
+}
+
+/* インジケーターの位置調整（必要に応じて変更） */
+.festival__carousel-indicators {
+    bottom: 10px;
+}
+
+/* スライドごとの画像 */
+.festival__carousel-inner .festival__carousel-item {
+    /* 高さやオーバーフローはお好みで */
+}
+
+.festival__img {
+    width: 100%;
+    height: auto;
+}
+
+/*========================================
+  フェスティバル コンテンツ (Festival Content)
+========================================*/
+.festival__content {
+    margin-top: 20px;
+}
+
+.festival__title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.festival__title--highlight {
+    color: var(--color-red);
+}
+
+.festival__title--year {
+    font-size: 30px;
+}
+
+.festival__subtitle {
+    font-size: 18px;
+    color: #666;
+}
+
+.festival__info {
+    margin-top: 20px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.festival__date {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.festival__date--small {
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.festival__location {
+    font-size: 16px;
+    margin-top: 5px;
 }
