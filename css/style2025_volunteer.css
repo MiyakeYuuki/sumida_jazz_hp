@@ -10,6 +10,7 @@
     font-size: 48px;
     font-weight: bold;
     margin: 0;
+    text-align: left;
 }
 
 .volunteer__subtitle {
@@ -148,4 +149,241 @@
 .volunteer-info__image-wrap {
     text-align: center;
     /* 必要に応じて余白等調整 */
+}
+
+/****************************************************************************
+ * activity-section
+ * 活動内容セクションに関するスタイル
+ ****************************************************************************/
+.activity-section {
+    padding: 40px 0;
+}
+
+.activity-section__container {
+    /* Bootstrapの.containerを利用 */
+}
+
+.activity-section__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* 活動内容グループ全体 */
+.activity-section__group {
+    background-color: #f8f8f8;
+    /* 枠線 */
+    padding: 20px;
+    text-align: left;
+}
+
+/* 活動内容(Step)のテキスト */
+.activity-section__step {
+    font-size: 13px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* 活動内容のテキスト */
+.activity-section__text {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.activity-detail {
+    margin-top: 20px;
+}
+
+/* =========================================
+   volunteer ブロック全体
+========================================= */
+.volunteer {
+    /* 必要に応じてセクション全体の余白や背景などを設定 */
+    padding: 20px 0;
+}
+
+/* volunteer__container: Bootstrap .container を拡張する場合 */
+.volunteer__container {
+    /* 追加でレイアウト調整が必要であれば記述 */
+}
+
+/* =========================================
+     アコーディオン全体
+  ========================================= */
+.volunteer__accordion {
+    /* パネルグループ全体のマージンなどを調整する場合に使用 */
+}
+
+/* =========================================
+     アコーディオン内のパネル
+  ========================================= */
+.volunteer__accordion-panel {
+    /* パネル全体のスタイルを追加する場合に使用 */
+    margin-bottom: 10px;
+    /* パネル間の間隔 */
+    background-color: #fff;
+    /* 背景色を白に設定 */
+}
+
+/* パネルのヘッダ部分 */
+.volunteer__accordion-panel-heading {
+    /* 見出し部分の背景色や余白などを調整したい場合に使用 */
+}
+
+/* パネルタイトル（見出しテキスト） */
+.volunteer__accordion-panel-title {
+    /* タイトルテキストのスタイル */
+    margin: 0;
+}
+
+/* パネルボディ部分 */
+.volunteer__accordion-panel-body {
+    /* コンテンツ部分の余白や文字スタイルなどを調整 */
+    padding: 15px;
+}
+
+/* イメージ */
+.volunteer__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+/* =========================================
+     プラス／マイナスアイコンの制御
+     Bootstrap の collapse で、.collapsed が付くかどうかで
+     開閉状態を判定できる
+  ========================================= */
+
+/* 全てのリンクにデフォルトでプラスを表示 */
+.volunteer__accordion-panel-title a::after {
+    content: "+";
+    float: right;
+    font-size: 20px;
+    line-height: 20px;
+    /* 必要に応じて余白や色などを調整 */
+}
+
+/* パネルが開いている場合（.collapsed が付かない状態）はマイナスに切り替え */
+.volunteer__accordion-panel-title a:not(.collapsed)::after {
+    content: "-";
+}
+
+/* 矢印ラップ（Glyphicon用） */
+.p-volunteerFlow__arrowWrap {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Glyphiconによる矢印スタイル */
+.p-volunteerFlow__arrow {
+    font-size: 24px;
+    /* 矢印アイコンのサイズ調整 */
+    color: #333;
+    /* 必要に応じて色を調整 */
+}
+
+.font-color_red {
+    color: #C30A0A;
+    text-decoration: underline;
+}
+
+.calendar-section__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/********************************
+ * 当日の案内セクション (Block)
+ ********************************/
+/* Block本体 */
+.p-dayInfo {
+    margin-bottom: 15px;
+    /* セクション間の余白調整 */
+}
+
+/* タイトル（h1） */
+.p-dayInfo__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 太字のテキスト */
+.p-dayInfo__bold {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* リストのテキスト */
+.p-dayInfo__list {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 通常のテキスト */
+.p-dayInfo__text {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* リンク本体 */
+.p-dayInfo__link {
+    font-size: 16px;
+    /* 例: リンクのフォントサイズ */
+    text-decoration: none;
+    color: #333;
+    vertical-align: middle;
+    text-decoration: underline;
+    /* テキストと画像を同じ縦位置に */
+}
+
+.p-dayInfo__link:hover,
+.p-dayInfo__link:focus {
+    text-decoration: underline;
+    color: #0a00c0;
+}
+
+/********************************
+   * サブセクション (Element)
+   ********************************/
+.p-dayInfo__section {
+    margin-bottom: 30px;
+    /* セクション間の余白 */
+}
+
+/* サブタイトル（h2） */
+.p-dayInfo__subTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-left: 2px solid #333;
+    padding: 0.1em 0 0.1em 0.7em;
+}
+
+/********************************
+ * リンクとアイコンの調整
+ ********************************/
+
+/* アイコン画像 */
+.p-dayInfo__icon {
+    height: 1.4em;
+    /* リンクのフォントサイズに合わせる */
+    width: auto;
+    /* 幅は自動調整 */
+    vertical-align: middle;
+    /* テキストと同じ縦位置に揃える */
+    margin-left: 5px;
+    /* リンクと画像の間に余白を追加 */
 }
