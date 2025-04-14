@@ -58,6 +58,7 @@
 </head>
 
 <body>
+    <!-- ヘッダーを呼び出し -->
     <!-- ヘッダーセクション -->
     <header class="header">
         <!-- ナビゲーションバー（ロゴ・タイトル） -->
@@ -70,7 +71,7 @@
                                 class="header__logo">
                         </a>
                         <span class="bold-text">
-                            2025<br />すみだストリートジャズフェスティバル
+                            すみだストリート<br />ジャズフェスティバル
                         </span>
                     </div>
                 </div>
@@ -104,28 +105,18 @@
                             <img src="img/top/logo_sumida_jazz.png" alt="Festival Logo" class="menu__modal-logo">
                             <p class="menu__modal-festival-name">すみだストリートジャズフェスティバル</p>
                             <p class="menu__modal-festival-date">2025.10.18 sat - 10.19 sun</p>
-                            <button class="btn button button--volunteer">
-                                <div class="col-sm-2">
-                                    <img class="button__icon" src="img/top/icon-user.png" alt="ボランティアアイコン">
+                            <div class="center-block">
+                                <div class="center-block button--volunteer">
+                                    <img class="center-block" src="img/top/btn_get_volunteer.png" alt="ボランティア詳細 / 応募"
+                                        width="100%">
                                 </div>
-                                <div class="col-sm-1">
-                                    <span class="button__vline--volunteer"></span>
+                            </div>
+                            <div class="center-block">
+                                <div class="center-block button--sponsor">
+                                    <img class="center-block" src="img/top/btn_get_sponsor.png" alt="スポンサー詳細/応募"
+                                        width="100%">
                                 </div>
-                                <div class="col-sm-9">
-                                    <span class="button__text">ボランティア詳細 / 応募</span>
-                                </div>
-                            </button>
-                            <button class="btn button button--sponsor">
-                                <div class="col-sm-2">
-                                    <img class="button__icon" src="img/top/icon-briefcase.png" alt="ボランティアアイコン">
-                                </div>
-                                <div class="col-sm-1">
-                                    <span class="button__vline--sponsor"></span>
-                                </div>
-                                <div class="col-sm-9">
-                                    <span class="button__text">スポンサー詳細/応募</span>
-                                </div>
-                            </button>
+                            </div>
                             <img src="img/top/logo_october_gibier.png" alt="Festival Logo"
                                 class="menu__modal-logo-gibier">
                         </div>
@@ -161,128 +152,81 @@
                         </div>
                     </div>
                     <!-- モーダル下部：スポンサー・バナー -->
-                    <div class="row menu__modal-bottom">
-                        <div class="col-sm-1">
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="menu__modal-banner">
-                                <img src="img/top/banner_sponsor.png" alt="Banner 1" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="menu__modal-banner">
-                                <img src="img/top/banner_sponsor.png" alt="Banner 2" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="menu__modal-banner">
-                                <img src="img/top/banner_sponsor.png" alt="Banner 3" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="menu__modal-banner">
-                                <img src="img/top/banner_sponsor.png" alt="Banner 4" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="menu__modal-banner">
-                                <img src="img/top/banner_sponsor.png" alt="Banner 5" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="col-sm-1">
-                        </div>
-                    </div>
+                    {{sponsor_new}}
                 </div>
             </div>
         </section>
     </header>
 
-    <!-- メインセクション -->
-    <main class="main">
+    <!-- {{来場ありがとう}} -->
+
+    <main class="main" id="page-[*alias*]">
         <!-- 追従用ボランティアボタン（固定） -->
-        <button class="btn button_fixed button--volunteer volunteer--fixed">
-            <div class="col-sm-2">
-                <img class="button__icon" src="img/top/icon-user.png" alt="ボランティアアイコン">
-            </div>
-            <div class="col-sm-1">
-                <span class="button__vline--volunteer"></span>
-            </div>
-            <div class="col-sm-9">
-                <span class="button__text">ボランティア詳細 / 応募</span>
-            </div>
-        </button>
+        <div class="button_fixed button--volunteer volunteer--fixed">
+            <a href="[~75~]"><img class="center-block" src="img/top/btn_get_volunteer.png" alt="ボランティア詳細 / 応募"></a>
+        </div>
 
         <!-- Topボタン・グリッドメニューセクション -->
-        <section class="top-buttons-section">
+        <section class="row top-buttons-section">
             <!-- 左側 -->
-            <div class="col-sm-4">
+            <div class="col-sm-4 hidden-xs">
                 <!-- 各種ボタン -->
-                <div class="row">
-                    <button class="btn button button--volunteer">
-                        <div class="col-sm-2">
-                            <img class="button__icon" src="img/top/icon-user.png" alt="ボランティアアイコン">
-                        </div>
-                        <div class="col-sm-1">
-                            <span class="button__vline--volunteer"></span>
-                        </div>
-                        <div class="col-sm-9">
-                            <span class="button__text">ボランティア詳細 / 応募</span>
-                        </div>
-                    </button>
+                <div class="center-block button--volunteer">
+                    <a href="[~75~]"><img class="center-block" src="img/top/btn_get_volunteer.png" alt="ボランティア詳細/応募"
+                            width="100%"></a>
                 </div>
-                <div class="row">
-                    <button class="btn button button--sponsor">
-                        <div class="col-sm-2">
-                            <img class="button__icon" src="img/top/icon-briefcase.png" alt="ボランティアアイコン">
-                        </div>
-                        <div class="col-sm-1">
-                            <span class="button__vline--sponsor"></span>
-                        </div>
-                        <div class="col-sm-9">
-                            <span class="button__text">スポンサー詳細/応募</span>
-                        </div>
-                    </button>
+                <div class="center-block button--sponsor">
+                    <a href="[~9~]"><img class="center-block" src="img/top/btn_get_sponsor.png" alt="スポンサー詳細/応募"
+                            width="100%"></a>
                 </div>
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="grid-menu__item">
-                            <div class="grid-menu__button">
-                                <img src="img/top/icon-time.png" alt="時計アイコン">
-                                <p>タイムテーブル</p>
-                            </div>
+                            <a href="[~1026~]">
+                                <div class="center-block grid-menu__button">
+                                    <img src="img/top/icon-time.png" alt="時計アイコン">
+                                    <p>タイムテーブル</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-xs-6">
                         <div class="grid-menu__item">
-                            <div class="grid-menu__button">
-                                <img src="img/top/icon-music.png" alt="音楽アイコン">
-                                <p>アーティスト紹介</p>
-                            </div>
+                            <a href="[~1026~]">
+                                <div class="center-block grid-menu__button">
+                                    <img src="img/top/icon-music.png" alt="音楽アイコン">
+                                    <p>アーティスト紹介</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="grid-menu__item">
-                            <div class="grid-menu__button">
-                                <img src="img/top/icon-map.png" alt="地図アイコン">
-                                <p>アクセス</p>
-                            </div>
+                            <a href="[~982~]">
+                                <div class="center-block grid-menu__button">
+                                    <img src="img/top/icon-map.png" alt="地図アイコン">
+                                    <p>アクセス</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-xs-6">
                         <div class="grid-menu__item">
-                            <div class="grid-menu__button">
-                                <img src="img/top/icon-cart.png" alt="カートアイコン">
-                                <p>公式グッズ</p>
-                            </div>
+                            <a href="[~1026~]">
+                                <div class="center-block grid-menu__button">
+                                    <img src="img/top/icon-cart.png" alt="カートアイコン">
+                                    <p>公式グッズ</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <!-- オクトーバーフェストセクション -->
                     <div class="col-xs-12">
-                        <a href="#"><img src="img/top/logo_october_gibier.png" alt="October Fest Logo"
+                        <a href="[~1026~]"><img src="img/top/logo_october_gibier.png" alt="October Fest Logo"
                                 class="img-responsive"></a>
                     </div>
                 </div>
@@ -290,20 +234,22 @@
                     <!-- ソーシャルリンクセクション -->
                     <section class="social-links-section">
                         <div class="row">
-                            <div class="col-xs-4"></div>
-                            <div class="col-xs-1">
-                                <a href="#"><img src="img/top/logo_insta_bk.png" alt="Instagram"></a>
+                            <div class="col-xs-3">
+                                <a href="https://www.instagram.com/sumidajazz/" target="_blank"><img
+                                        class="center-block" src="img/top/logo_insta_bk.png" alt="Instagram"></a>
                             </div>
-                            <div class="col-xs-1">
-                                <a href="#"><img src="img/top/logo_facebook_bk.png" alt="Facebook"></a>
+                            <div class="col-xs-3">
+                                <a href="https://www.facebook.com/SumidaJazz/" target="_blank"><img class="center-block"
+                                        src="img/top/logo_facebook_bk.png" alt="Facebook"></a>
                             </div>
-                            <div class="col-xs-1">
-                                <a href="#"><img src="img/top/logo_x_bk.png" alt="X"></a>
+                            <div class="col-xs-3">
+                                <a href="https://x.com/sumidajazz/" target="_blank"><img class="center-block"
+                                        src="img/top/logo_x_bk.png" alt="X"></a>
                             </div>
-                            <div class="col-xs-1">
-                                <a href="#"><img src="img/top/logo_youtube_bk.png" alt="YouTube"></a>
+                            <div class="col-xs-3">
+                                <a href="https://www.youtube.com/c/sumidajazz123" target="_blank"><img
+                                        class="center-block" src="img/top/logo_youtube_bk.png" alt="YouTube"></a>
                             </div>
-                            <div class="col-xs-4"></div>
                         </div>
                     </section>
                 </div>
@@ -335,335 +281,327 @@
                     </div>
 
                     <!-- フェスティバル コンテンツ -->
-                    <div class="container">
-                        <div class="festival__content text-center">
-                            <h1 class="festival__title">
-                                <span class="festival__title--main">SUMIDA STREET</span>
-                                <span class="festival__title--highlight">J</span>
-                                <span class="festival__title--main">AZZ FESTIVAL</span>
-                                <span class="festival__title--year">2025</span>
-                            </h1>
-                            <p class="festival__subtitle">すみだストリートジャズフェスティバル</p>
-                        </div>
-                        <div class="festival__info text-center">
-                            <div class="festival__date">
-                                <span class="festival__date--day">10.18</span>
-                                <span class="festival__date--small">Sat</span>
-                                -
-                                <span class="festival__date--day">10.19</span>
-                                <span class="festival__date--small">Sun</span>
+                    <div class="">
+                        <div class="festival__title col-sm-8">
+                            <img src="./img/top/top_title2025.png" alt="すみだストリートジャズフェスティバル２０２５" width="100%"">
+                    </div>
+                    <div class=" festival__info pull-right col-sm-3 col-xs-6">
+                            <img src="img/top/top_2025date.png" alt="2025年10月18日(土)、19日(日)入場無料＠錦糸公園他" width="100%"">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- NEWSセクション -->
+    <section class=" news-section c-section">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <span class="news-section__title">NEWS</span>
+                                        <span class="news-section__subtitle">最新のお知らせ</span>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <button class="btn button--black">
+                                            VIEW ALL <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="news-section__list">
+                                            [!Ditto?tpl='@CODE:<li class="news-section__item"><span
+                                                    class="news-section__date">[+publishedon:date=`%Y.%m.%d`+]</span><span
+                                                    class="news-section__tag">お知らせ</span>
+                                                <p class="news-section__text">
+                                                    [+お知らせリンク先:is(0):then([+description+]):else(<a
+                                                        href="[~[+url+]~]">[+description+]</a>)+]</p>
+                                            </li>'&orderBy='publishedon DESC'&parents=1018&display=5&id=`topic2025`!]
+                                            <!--@IGNORE:BEGIN-->
+                                            <li class="news-section__item">
+                                                <span class="news-section__date">2025/01/01</span>
+                                                <span class="news-section__tag">お知らせ</span>
+                                                <p class="news-section__text">2025年の開催日時が決定しました！</p>
+                                            </li>
+                                            <!--@IGNORE:END-->
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <section id="twitter" class="center"
+                                            style="display: block; margin-left: auto; margin-right:auto;">
+                                            <a class="twitter-timeline" data-width="500" data-height="500"
+                                                href="https://twitter.com/sumidajazz?ref_src=twsrc%5Etfw">Tweets by
+                                                sumidajazz</a>
+                                            <script async src="https://platform.twitter.com/widgets.js"
+                                                charset="utf-8"></script>
+                                        </section>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="festival__location">入場無料 @錦糸公園 他</p>
+                </section>
+
+                <!-- ABOUT USセクション -->
+                <section class="about-section c-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="about__content">
+                                    <h2 class="about__titl h2title">ABOUT US</h2>
+                                    <p class="about__subtitle h2subtitle">すみだストリートジャズフェスティバルとは？</p>
+                                    <p class="about__text">
+                                        すみだストリートジャズフェスティバルは、東京都墨田区で毎年開催される
+                                        <span class="about__highlight">入場無料</span>の音楽イベントです。
+                                        区内の公園や商業施設、路上などを舞台に、多くのアーティストが集い、街全体が音楽で彩られます。
+                                    </p>
+                                    <p class="about__text">
+                                        このフェスティバルは、<span class="about__highlight">多くのボランティアの協力</span>によって運営されており、
+                                        地域の人々の熱意と共に大きく成り立っています。
+                                    </p>
+                                    <p class="about__text">
+                                        地元企業や全国の支援のもと、そしてミュージシャンやスタッフの尽力によって、
+                                        誰でも気軽に音楽を楽しめる場が提供されています。
+                                    </p>
+                                    <p class="about__text">
+                                        音楽を通じて人と人がつながる、そんな温かい雰囲気が魅力の「すみだストリートジャズフェスティバル」。
+                                        ぜひ足を運んでみませんか？
+                                    </p>
+                                    <a href="#" class="about__button btn button--black">
+                                        <span>Volunteer</span> ボランティアについてもっと知る
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about__image">
+                                    <img src="img/top/about_us.png" alt="Sumida Jazz Festival" class="img-responsive">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
-            </div>
-        </section>
 
-        <!-- NEWSセクション -->
-        <section class="news-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <h2 class="news-section__title">
-                            <strong>NEWS</strong> <span>最新のお知らせ</span>
-                        </h2>
+                <!-- INFORMATIONセクション -->
+                <section class="info-section  c-section">
+                    <div class="container">
+                        <h2 class="info__title h2title">INFORMATION</h2>
+                        <p class="info__subtitle h2subtitle">閲覧情報</p>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <div class="info__box">
+                                    <img src="img/top/icon-time-2.png" alt="Time Table" class="info__icon">
+                                    <div class="info__box-title">TIME TABLE</div>
+                                    <div class="info__box-subtitle">タイムテーブル</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <div class="info__box">
+                                    <img src="img/top/icon-music-2.png" alt="Artist" class="info__icon">
+                                    <div class="info__box-title">ARTIST</div>
+                                    <div class="info__box-subtitle">アーティスト紹介</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="info__banner">
+                                    <img src="img/top/logo_october_gibier_for_info.png" alt="Event Banner"
+                                        class="info__banner-img hidden-xs">
+                                    <img src="img/top/logo_october_gibier_for_info-xs.png" alt="Event Banner"
+                                        class="info__banner-img visible-xs-block">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info__box info__box--event text-center">
+                                    <div class="info__box-title">EVENT</div>
+                                    <div class="info__box-subtitle">イベント一覧</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-6 text-right">
-                        <button class="btn button--black">
-                            VIEW ALL <span class="glyphicon glyphicon-chevron-right"></span>
-                        </button>
+                </section>
+
+                <!-- ACCESSセクション -->
+                <section class="access-section c-section">
+                    <div class="container">
+                        <h2 class="access__title h2title">ACCESS</h2>
+                        <p class="access__subtitle h2subtitle">アクセス</p>
+                        <div class="access__map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.111033828465!2d139.8138099119324!3d35.698885172467214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601888d700d2556b%3A0xe57bace76038dd17!2z6Yym57O45YWs5ZyS!5e0!3m2!1sja!2sjp!4v1742220075005!5m2!1sja!2sjp"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="row access__buttons">
+                            <div class="col-xs-12 col-sm-6">
+                                <a href="#" class="access__button">
+                                    <span>錦糸公園へのアクセス</span>
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <a href="#" class="access__button">
+                                    <span>すみだトリフォニーホールへのアクセス</span>
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <ul class="news-section__list">
-                            <li class="news-section__item">
-                                <span class="news-section__date">2025/01/01</span>
-                                <span class="news-section__tag">お知らせ</span>
-                                <p class="news-section__text">2025年の開催日時が決定しました！</p>
-                            </li>
-                            <li class="news-section__item">
-                                <span class="news-section__date">2025/01/01</span>
-                                <span class="news-section__tag">お知らせ</span>
-                                <p class="news-section__text">2025年の開催日時が決定しました！</p>
-                            </li>
-                            <li class="news-section__item">
-                                <span class="news-section__date">2025/01/01</span>
-                                <span class="news-section__tag">お知らせ</span>
-                                <p class="news-section__text">2025年の開催日時が決定しました！</p>
-                            </li>
-                            <li class="news-section__item">
-                                <span class="news-section__date">2025/01/01</span>
-                                <span class="news-section__tag">お知らせ</span>
-                                <p class="news-section__text">2025年の開催日時が決定しました！</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <ul class="news-section__list">
-                            <li class="news-section__item">
-                                <span class="news-section__date">2025/01/01</span>
-                                <span class="news-section__tag">お知らせ</span>
-                                <p class="news-section__text">2025年の開催日時が決定しました！</p>
-                            </li>
-                            <li class="news-section__item">
-                                <span class="news-section__date">2025/01/01</span>
-                                <span class="news-section__tag">お知らせ</span>
-                                <p class="news-section__text">
-                                    2025年の開催日時が決定しました！ 2025年の開催日時が決定しました！
+                </section>
+
+                <!-- GOODSセクション -->
+                <section class="goods-section c-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="goods__title h2title visible-xs-block">GOODS</h2>
+                                <p class="goods__subtitle h2subtitle visible-xs-block">公式グッズ</p>
+                                <div class="goods__images">
+                                    <img src="img/top/goods.png" alt="グッズ1" class="goods__image img-responsive">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class="goods__title h2title hidden-xs">GOODS</h2>
+                                <p class="goods__subtitle h2subtitle hidden-xs">公式グッズ</p>
+                                <p class="goods__description">
+                                    「すみだストリートジャズフェスティバル」は、2010年より毎年開催されている
+                                    全会場無料の音楽イベントです。私たちは、音楽都市すみだで、音楽の素晴らしさを
+                                    多くの方に届けることを目指しています。
                                 </p>
-                            </li>
-                            <li class="news-section__item">
-                                <span class="news-section__date">2025/01/01</span>
-                                <span class="news-section__tag">お知らせ</span>
-                                <p class="news-section__text">2025年の開催日時が決定しました！</p>
-                            </li>
-                            <li class="news-section__item">
-                                <span class="news-section__date">2025/01/01</span>
-                                <span class="news-section__tag">お知らせ</span>
-                                <p class="news-section__text">2025年の開催日時が決定しました！</p>
-                            </li>
-                        </ul>
+                                <p class="goods__description">
+                                    このイベントは、企業協賛や寄付金、飲食ブースやグッズの売上で支えられており、
+                                    継続のためには皆様方支えが必要です。
+                                    ぜひグッズのご購入で、私たちの活動を応援してください！
+                                    (画像は昨年度のものです)
+                                </p>
+                                <a href="#" class="btn btn-lg goods__button">
+                                    <img class="center-block hidden-xs" src="img/top/btn_info_tshirts.png"
+                                        alt="T-SHIRTS/今年のTシャツについて" width="100%">
+                                    <img class="center-block visible-xs-block" src="img/top/btn_info_tshirts-xs.png"
+                                        alt="T-SHIRTS/今年のTシャツについて" width="100%">
+                                </a>
+                                <a href="#" class="btn btn-lg goods__button">
+                                    <img class="center-block hidden-xs" src="img/top/btn_onlinshop.png" alt="オンラインショップ"
+                                        width="100%">
+                                    <img class="center-block visible-xs-block" src="img/top/btn_onlinshop-xs.png"
+                                        alt="オンラインショップ" width="100%">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <!-- ABOUT USセクション -->
-        <section class="about-section">
-            <div class="container about">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="about__content">
-                            <h2 class="about__title">ABOUT US</h2>
-                            <p class="about__subtitle">すみだストリートジャズフェスティバルとは？</p>
-                            <p class="about__text">
-                                すみだストリートジャズフェスティバルは、東京都墨田区で毎年開催される
-                                <span class="about__highlight">入場無料</span>の音楽イベントです。
-                                区内の公園や商業施設、路上などを舞台に、多くのアーティストが集い、街全体が音楽で彩られます。
-                            </p>
-                            <p class="about__text">
-                                このフェスティバルは、<span class="about__highlight">多くのボランティアの協力</span>によって運営されており、
-                                地域の人々の熱意と共に大きく成り立っています。
-                            </p>
-                            <p class="about__text">
-                                地元企業や全国の支援のもと、そしてミュージシャンやスタッフの尽力によって、
-                                誰でも気軽に音楽を楽しめる場が提供されています。
-                            </p>
-                            <p class="about__text">
-                                音楽を通じて人と人がつながる、そんな温かい雰囲気が魅力の「すみだストリートジャズフェスティバル」。
-                                ぜひ足を運んでみませんか？
-                            </p>
-                            <a href="#" class="about__button btn button--black">
-                                <span>Volunteer</span> ボランティアについてもっと知る
-                            </a>
+                <!-- GALLERYセクション -->
+                <section class="gallary-section c-section">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="">
+                                <h2 class="gallary__title">GALLERY</h2>
+                                <p class="gallary__subtitle">各年度のお写真をアルバム形式で公開してます</p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="">
+                                <a href="#" class="gallary__button">
+                                    <span>前年度のギャラリー</span>
+                                    <span class="glyphicon glyphicon-new-window"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="">
+                                <a href="#" class="gallary__all">
+                                    <span>年度一覧はこちら</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="about__image">
-                            <img src="img/top/about_us.png" alt="Sumida Jazz Festival" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- INFORMATIONセクション -->
-        <section class="information-section">
-            <div class="container info">
-                <h2 class="info__title">INFORMATION</h2>
-                <p class="info__subtitle">閲覧情報</p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="info__box">
-                            <img src="img/top/icon-time-2.png" alt="Time Table" class="info__icon">
-                            <h3 class="info__box-title">TIME TABLE</h3>
-                            <p class="info__box-subtitle">タイムテーブル</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info__box">
-                            <img src="img/top/icon-music-2.png" alt="Artist" class="info__icon">
-                            <h3 class="info__box-title">ARTIST</h3>
-                            <p class="info__box-subtitle">アーティスト紹介</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="info__banner">
-                            <img src="img/top/logo_october_gibier_for_info.png" alt="Event Banner"
-                                class="info__banner-img">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="info__box">
-                            <h3 class="info__box-title">EVENT</h3>
-                            <p class="info__box-subtitle">イベント一覧</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ACCESSセクション -->
-        <section class="access-section">
-            <div class="container access">
-                <h2 class="access__title">ACCESS</h2>
-                <p class="access__subtitle">アクセス</p>
-                <hr class="access__divider">
-                <div class="access__map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.111033828465!2d139.8138099119324!3d35.698885172467214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601888d700d2556b%3A0xe57bace76038dd17!2z6Yym57O45YWs5ZyS!5e0!3m2!1sja!2sjp!4v1742220075005!5m2!1sja!2sjp"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="row access__buttons">
-                    <div class="col-xs-12 col-sm-6">
-                        <a href="#" class="access__button">
-                            <span>路糸公園へのアクセス</span>
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <a href="#" class="access__button">
-                            <span>すみだトリフォニーホールへのアクセス</span>
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- GOODSセクション -->
-        <section class="goods-section">
-            <div class="container goods">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="goods__title">GOODS</h2>
-                        <p class="goods__subtitle">公式グッズ</p>
-                        <p class="goods__description">
-                            「すみだストリートジャズフェスティバル」は、2010年より毎年開催されている
-                            全会場無料の音楽イベントです。私たちは、音楽都市すみだで、音楽の素晴らしさを
-                            多くの方に届けることを目指しています。
-                        </p>
-                        <p class="goods__description">
-                            このイベントは、企業協賛や寄付金、飲食ブースやグッズの売上で支えられており、
-                            継続のためには皆様方支えが必要です。
-                            ぜひグッズのご購入で、私たちの活動を応援してください！
-                            (画像は昨年度のものです)
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="goods__images">
-                            <img src="img/top/goods.png" alt="グッズ1" class="goods__image img-responsive">
-                        </div>
-                    </div>
-                </div>
-                <div class="goods__buttons">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a href="#" class="btn button--black btn-lg btn-block goods__button">
-                                T-SHIRTS <span>今年のTシャツについて</span>
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="#" class="btn btn-default btn-lg btn-block goods__button">
-                                ONLINE SHOP <span>オンラインショップ</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
     </main>
 
     <!-- フッターセクション -->
     <footer class="footer">
         <!-- スポンサー バナー -->
-        <div class="sponsor-section container text-center">
-            <div class="row">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-2"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
-                <div class="col-xs-2"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
-                <div class="col-xs-2"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
-                <div class="col-xs-2"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
-                <div class="col-xs-2"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
-                <div class="col-xs-1"></div>
-            </div>
-        </div>
-
+        {{sponsor_new}}
         <!-- SNSセクション -->
-        <div class="sns-section container">
+        <div class="sns-section">
             <div class="row">
-                <!-- Instagram -->
-                <div class="col-sm-3">
-                    <a href="#" class="sns-section__link">
-                        <div class="row sns-section__item">
-                            <div class="col-sm-4">
-                                <img src="img/top/logo_insta.png" alt="Instagram" class="sns-section__icon">
+                <div class="container">
+                    <!-- Instagram -->
+                    <div class="col-sm-3">
+                        <a href="https://www.instagram.com/sumidajazz/" taget="_blank" class="sns-section__link">
+                            <div class="row sns-section__item">
+                                <div class="col-sm-4">
+                                    <img src="img/top/logo_insta.png" alt="Instagram" class="sns-section__icon">
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="sns-section__text">Instagram</p>
+                                </div>
                             </div>
-                            <div class="col-sm-8">
-                                <p class="sns-section__text">Instagram</p>
+                        </a>
+                    </div>
+                    <!-- Facebook -->
+                    <div class="col-sm-3">
+                        <a href="https://www.facebook.com/SumidaJazz/" taget="_blank" class="sns-section__link">
+                            <div class="row sns-section__item">
+                                <div class="col-sm-4">
+                                    <img src="img/top/logo_facebook.png" alt="Facebook" class="sns-section__icon">
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="sns-section__text">Facebook</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Facebook -->
-                <div class="col-sm-3">
-                    <a href="#" class="sns-section__link">
-                        <div class="row sns-section__item">
-                            <div class="col-sm-4">
-                                <img src="img/top/logo_facebook.png" alt="Facebook" class="sns-section__icon">
+                        </a>
+                    </div>
+                    <!-- X (旧Twitter) -->
+                    <div class="col-sm-3">
+                        <a href="https://x.com/sumidajazz/" taget="_blank" class="sns-section__link">
+                            <div class="row sns-section__item">
+                                <div class="col-sm-4">
+                                    <img src="img/top/logo_x.png" alt="X (旧Twitter)" class="sns-section__icon">
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="sns-section__text">X (旧Twitter)</p>
+                                </div>
                             </div>
-                            <div class="col-sm-8">
-                                <p class="sns-section__text">Facebook</p>
+                        </a>
+                    </div>
+                    <!-- YouTube -->
+                    <div class="col-sm-3">
+                        <a href="https://www.youtube.com/c/sumidajazz123" taget="_blank" class="sns-section__link">
+                            <div class="row sns-section__item">
+                                <div class="col-sm-4">
+                                    <img src="img/top/logo_youtube.png" alt="YouTube" class="sns-section__icon">
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="sns-section__text">YouTube</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- X (旧Twitter) -->
-                <div class="col-sm-3">
-                    <a href="#" class="sns-section__link">
-                        <div class="row sns-section__item">
-                            <div class="col-sm-4">
-                                <img src="img/top/logo_x.png" alt="X (旧Twitter)" class="sns-section__icon">
-                            </div>
-                            <div class="col-sm-8">
-                                <p class="sns-section__text">X (旧Twitter)</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- YouTube -->
-                <div class="col-sm-3">
-                    <a href="#" class="sns-section__link">
-                        <div class="row sns-section__item">
-                            <div class="col-sm-4">
-                                <img src="img/top/logo_youtube.png" alt="YouTube" class="sns-section__icon">
-                            </div>
-                            <div class="col-sm-8">
-                                <p class="sns-section__text">YouTube</p>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- バナーセクション -->
-        <div class="container banner-section">
+        <div class="banner-section">
             <div class="row">
-                <div class="col-xs-12 col-sm-3">
-                    <a href="#" class="banner-section__link">
-                        <img src="img/top/banner_hikifune.png" alt="バナー1" class="banner-section__image">
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-3">
-                    <a href="#" class="banner-section__link">
-                        <img src="img/top/banner_sumida_jazz.png" alt="バナー2" class="banner-section__image">
-                    </a>
+                <div class="container">
+                    <div class="col-xs-12 col-sm-3">
+                        <a href="#" class="banner-section__link">
+                            <img src="content/images/2025/Speaking_Jazz_logo_.png"
+                                alt="2025年日本国際博覧会（2025年大阪・関西万博）への参加と国際ジャズ・デーを記念し、万博会場内のEXPOナショナルデーホールにてジャズイベント「Speaking Jazz」を開催します。"
+                                class="banner-section__image">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <a href="#" class="banner-section__link">
+                            <img src="img/top/banner_hikifune.png" alt="バナー1" class="banner-section__image">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <a href="#" class="banner-section__link">
+                            <img src="img/top/banner_sumida_jazz.png" alt="バナー2" class="banner-section__image">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -672,71 +610,58 @@
         <div class="footer__content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 footer__info">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <img src="img/top/logo_sumida_jazz.png" alt="ロゴ" class="footer__logo">
-                            </div>
-                            <div class="col-md-10">
-                                <p>すみだストリートジャズフェスティバル</p>
+                    <div class="col-md-6 footer__info">
+                        <div class="footer__fes">
+                            <img src="img/top/logo_sumida_jazz.png" alt="ロゴ" class="footer__logo">
+                            <div>
+                                <p class="lead">すみだストリートジャズフェスティバル</p>
                                 <p>〒130-0005 東京都墨田区東駒形19-2 2階</p>
                             </div>
                         </div>
                         <button class="btn button--black button--contact">お問い合わせ</button>
-                        <p class="footer__small-text"><a href="#">アーカイブ</a></p>
-                        <p class="footer__small-text"><a href="#">プライバシーポリシー</a></p>
-                        <p class="footer__small-text"><a href="#">一般社団法人SSJF</a></p>
-                        <p class="footer__small-text"><a href="#">定款・資料公告</a></p>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <div class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-3">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5">
                                 <ul class="footer__links">
-                                    <li class="footer__link-item"><a href="#">トップ</a></li>
-                                    <li class="footer__link-item"><a href="#">お知らせ</a></li>
-                                    <li class="footer__link-item"><a href="#">ボランティア募集</a></li>
-                                    <li class="footer__link-item"><a href="#">スポンサー募集</a></li>
+                                    <li class="footer__link-item"><a href="/">トップ</a></li>
+                                    <li class="footer__link-item"><a href="[~8~]">お知らせ</a></li>
+                                    <li class="footer__link-item"><a href="[~75~]">ボランティア募集</a></li>
+                                    <li class="footer__link-item"><a href="[~9~]">スポンサー募集</a></li>
+                                    <li class="footer__link-item"><a href="[~1026~]">公式グッズ</a></li>
+                                    <li class="footer__link-item"><a href="[~1026~]">募金・アンサム紹介</a></li>
+                                    <li class="footer__link-item"><a href="[~1026~]">ギャラリー</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-5">
                                 <ul class="footer__links">
-                                    <li class="footer__link-item"><a href="#">タイムテーブル</a></li>
-                                    <li class="footer__link-item"><a href="#">アーティスト情報</a></li>
-                                    <li class="footer__link-item"><a href="#">会場マップ・アクセス</a></li>
-                                    <li class="footer__link-item"><a href="#">イベント情報</a></li>
+                                    <li class="footer__link-item"><a href=[~1026~]">タイムテーブル</a></li>
+                                    <li class="footer__link-item"><a href="[~1026~]">アーティスト情報</a></li>
+                                    <li class="footer__link-item"><a href="[~1026~]">会場マップ・アクセス</a></li>
+                                    <li class="footer__link-item"><a href="[~1026~]">イベント情報</a></li>
                                 </ul>
-                            </div>
-                            <div class="col-md-3">
-                                <ul class="footer__links">
-                                    <li class="footer__link-item"><a href="#">公式グッズ</a></li>
-                                    <li class="footer__link-item"><a href="#">募金・アンサム紹介</a></li>
-                                    <li class="footer__link-item"><a href="#">ギャラリー</a></li>
-                                </ul>
-                                <img src="img/top/logo_october_gibier.png" alt="広告" class="footer__ad-banner"><br />
-                                <p class="footer__copylight">&copy; すみだストリートジャズフェスティバル実行委員会</p>
+                                <a href="[~1026~]"><img src="img/top/logo_october_gibier.png" alt="広告"
+                                        class="footer__ad-banner"></a><br />
                             </div>
                             <div class="col-md-1"></div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-6 footer__small-text">
+                        <p><a href="[~1026~]">アーカイブ</a> /</p>
+                        <p><a href="[~10~]">プライバシーポリシー</a> /</p>
+                        <p><a href="https://ssjf.or.jp/" taget="_blank">一般社団法人SSJF</a> /</p>
+                        <p><a href="https://ssjf.or.jp/article.html" taget="_blank">定款・資料公告</a></p>
+                    </div>
+                    <div class="col-md-6 footer__menu">
+                        <div class="footer__copylight text-right"">&copy; すみだストリートジャズフェスティバル実行委員会</div>
+                </div>
+            </div>
             </div>
         </div>
     </footer>
-
-    <!-- スクリプト -->
-    <script src="js/jquery-1.12.3.min.js"></script>
-    <script src="js/slidebars/slidebars.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.freetile.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/2025.js"></script>
-    <script>
-        var ua = navigator.userAgent;
-        var sp = (ua.indexOf('iPhone') > 0 || (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0));
-        var tab = (!sp && (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0));
-        if (tab) new ViewportExtra(1150);
-    </script>
 </body>
 
 </html>
