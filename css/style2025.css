@@ -7,6 +7,8 @@
     --color-black: #151515;
     --color-white: #FFFFFF;
     --color-base: #F2F2F2;
+    font-size: 16px;
+    letter-spacing: -0.03em;
 }
 
 /*========================================
@@ -14,6 +16,7 @@
 ========================================*/
 body {
     font-family: "Oswald", "Noto Sans JP", sans-serif;
+    background-color: #F2F2F2;
 }
 
 /*========================================
@@ -69,8 +72,8 @@ body {
 }
 
 .header__logo {
-    height: 70px;
-    margin-right: 10px;
+    height: 80px;
+    margin-right: 16px;
 }
 
 .header__festival-text {
@@ -102,10 +105,13 @@ body {
 .menu__link {
     display: inline-flex;
     background-color: var(--color-black);
-    padding: 15px;
     text-decoration: none;
     border: 1px solid var(--color-black);
     margin-top: 0;
+    width: 80px;
+    height: 95px;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu__icon {
@@ -249,13 +255,19 @@ body {
   --------------------------------------*/
 
 /* ボランティア用ボタン (Modifier: "--volunteer") */
-.button--volunteer {}
+.button--volunteer {
+    padding: 0;
+    padding-bottom: 10px;
+}
 
 /* ボタンとテキストの間の縦線 */
 .button__vline--volunteer {}
 
 /* スポンサー用ボタン (Modifier: "--sponsor") */
-.button--sponsor {}
+.button--sponsor {
+    padding: 0;
+    padding-bottom: 10px;
+}
 
 /* ボタンとテキストの間の縦線 */
 .button__vline--sponsor {}
@@ -268,12 +280,13 @@ body {
     bottom: 5px;
     padding: 0px;
     z-index: 1000;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .button_fixed {
     border: none;
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
     padding: 0px;
     font-size: 16px;
@@ -284,9 +297,22 @@ body {
 /*========================================
     Topボタン・グリッドメニューセクション
   ========================================*/
+.top-buttons-left {
+    padding: 0px 20px;
+}
 
 .grid-menu-section {
     margin-top: 20px;
+}
+
+.grid-menu table {
+    margin: auto;
+}
+
+.grid-menu__item {
+    padding: 5px !important;
+    border-top: 0 !important;
+    border-style: none !important;
 }
 
 .grid-menu__button {
@@ -294,8 +320,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: auto;
+    height: 90px;
     background-color: var(--color-white);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -304,14 +330,14 @@ body {
 }
 
 .grid-menu__button img {
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
     margin-bottom: 8px;
 }
 
 .grid-menu__button p {
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     color: var(--color-black);
 }
@@ -339,6 +365,20 @@ body {
 
 .social-links-section {
     margin: 15px 30px;
+}
+
+.social-links-section img {
+    width: 30px;
+}
+
+.gallary__pretext {
+    display: inline-block;
+    /* border: 1px solid #888; */
+    padding: 5px 10px;
+    text-decoration: underline;
+    margin: 10px 0;
+    font-size: 12px;
+    color: #000;
 }
 
 /*========================================
@@ -405,11 +445,12 @@ body {
 }
 
 .festival__content {
-    margin-top: 20px;
+    padding: 0 40px;
 }
 
 .festival__title {
-    margin-top: 5px;
+    margin-top: 13px;
+    margin-bottom: 30px;
     font-size: 36px;
     font-weight: bold;
     line-height: 1.2;
@@ -429,13 +470,13 @@ body {
 }
 
 .festival__info {
-    margin-top: 5px;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin: 4px auto;
     background-color: var(--color-black);
     color: var(--color-white);
-    padding: 10px;
+    padding: 2px;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .festival__date {
@@ -625,7 +666,10 @@ body {
     GALLERYセクション
   ========================================*/
 .gallary-section {
-    background: 70%#000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../img/top/bgimg_gallery.png);
+    background-blend-mode: darken;
+    background-size: cover;
     color: #fff;
 }
 
@@ -676,6 +720,10 @@ body {
 .sponsor-section {
     padding: 50px 15px;
     background-color: #CCCCCC;
+}
+
+.sponsor-section>div {
+    padding: 5px 0px;
 }
 
 .sponsor-section img {
@@ -833,7 +881,7 @@ body {
 /* スライドショー用の Carousel カスタムスタイル */
 /* Carousel 全体 */
 .festival__carousel {
-    margin-bottom: 30px;
+    margin: 15px 40px;
 }
 
 /* インジケーターの位置調整（必要に応じて変更） */
@@ -969,6 +1017,11 @@ body {
     text-decoration: none;
     font-size: 16px;
     justify-content: space-between;
+}
+
+.menu__modal-item span {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .menu__modal-list {
@@ -1291,6 +1344,29 @@ body {
     }
 }
 
+/********************************
+ * サブページ共通
+ ********************************/
+.subpage__main--section {}
+
+.subpage__main--section h2 {}
+
+.subpage__main--section h3 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.subpage__part--section {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.subpage__part--section a img {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* 以降MODX追加分 三宅*/
 /********************************
  * ENTRY
  ********************************/
