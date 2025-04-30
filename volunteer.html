@@ -213,24 +213,25 @@
         <!-- =================================
        ナビゲーションセクション
        ================================= -->
+        <!-- <span class="caret"></span>だけだとMODXアップロード時に自動削除されてしまう -->
         <section class="volunteer-nav">
             <div class="container">
                 <div class="col-sm-3">
                     <ul class="menu__modal-list list-unstyled">
                         <li class="menu__modal-item"><a href="#"><span>活動内容</span>
-                                <span class="caret"></span></a></li>
+                                <span class="caret">&nbsp;</span></a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <ul class="menu__modal-list list-unstyled">
                         <li class="menu__modal-item"><a href="#"><span>参加までの流れ</span>
-                                <span class="caret"></span></a></li>
+                                <span class="caret">&nbsp;</span></a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <ul class="menu__modal-list list-unstyled">
                         <li class="menu__modal-item"><a href="#"><span>当日について</span>
-                                <span class="caret"></span></a></li>
+                                <span class="caret">&nbsp;</span></a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3"></div>
@@ -575,11 +576,13 @@
         <!-- カレンダーセクション -->
         <section class="activity-section">
             <div class="container">
-                <h3 class="calendar-section__title">会議やイベントなどの日程はこちらからご確認いただけます</h2>
-                    <iframe
-                        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&showPrint=0&src=Z25jdC4yMDE0bTM3QGdtYWlsLmNvbQ&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043"
-                        style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no">
+                <h3 class="calendar-section__title">会議やイベントなどの日程はこちらからご確認いただけます</h3>
+                <div class="googleCalendar">
+                    <iframe style="border: solid 1px #777;" width="800" height="600"
+                        src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;ctz=Asia%2FTokyo&amp;showPrint=0&amp;src=Z25jdC4yMDE0bTM3QGdtYWlsLmNvbQ&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%230B8043"
+                        frameborder="0" scrolling="no">
                     </iframe>
+                </div>
             </div>
         </section>
 

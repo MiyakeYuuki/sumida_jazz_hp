@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>テストサイト</title>
+    <base href="[(site_url)]">
+    <meta name="description" content="[*description:ifempty=`[*pagetitle*]｜【すみだストリートジャズフェスティバル】は音楽都市すみだの街おこしイベントです。`*]">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- カスタムCSS -->
+    <link rel="stylesheet" href="css/style2025.css">
+    <!-- 外部スクリプト -->
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/slidebars/slidebars.min.js"></script>
+    <link rel="stylesheet" href="js/slidebars/slidebars.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.freetile.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/2025.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Exo:400,900|Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/viewport-extra@1.0.3/dist/viewport-extra.min.js"></script>
+    <script>
+        var ua = navigator.userAgent;
+        var sp = (ua.indexOf('iPhone') > 0 || (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0));
+        var tab = (!sp && (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0));
+        if (tab) new ViewportExtra(1150);
+    </script>
+    <!-- カノニカルURL -->
+    <link rel="canonical" href="[!パーマリンク!]">
+    <!-- 条件付きスクリプト（必要に応じて） -->
+    <!--@IF:[*id:is(1):then(1):else()*]>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <!--@ENDIF-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[!パーマリンク!]">
+    <meta property="og:title" content="[*id:isnot(1):then([*pagetitle*] | )*]{{イベント名}}">
+    <meta property="og:image" content="[(site_url)][*OGP画像:ifempty=`images/2024/common_ogp.png`*]">
+    <meta property="og:description"
+        content="[*description:ifempty=`[*pagetitle*]｜【すみだストリートジャズフェスティバル】は音楽都市すみだの街おこしイベントです。`*]">
+    <meta property="og:site_name" content="すみだストリートジャズフェスティバル">
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-28730608-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <!-- ヘッダーセクション -->
+    <header class="header">
+        <!-- ナビゲーションバー（ロゴ・タイトル） -->
+        <div class="header__navbar container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header__brand">
+                        <a href="#" class="header__brand-link">
+                            <img src="img/top/logo_sumida_jazz.png" alt="Sumida Street Jazz Festival"
+                                class="header__logo">
+                        </a>
+                        <span class="bold-text">
+                            2025<br />すみだストリートジャズフェスティバル
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menuボタンセクション -->
+        <section class="menu-section">
+            <div class="menu container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 text-right">
+                        <a href="#" class="menu__link js-menu-open">
+                            <span class="menu__text">MENU</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- モーダルセクション -->
+        <section class="modal-section">
+            <div class="menu__overlay js-menu-overlay">
+                <div class="menu__modal container">
+                    <!-- 閉じるボタン -->
+                    <div class="row text-right">
+                        <a href="#" class="menu__link js-menu-close">
+                            <span class="menu__text">CLOSE</span>
+                        </a>
+                    </div>
+                    <!-- モーダルコンテンツ（左：ロゴ・日付・ボタン、中央：メニューリスト） -->
+                    <div class="row menu__modal-content">
+                        <div class="col-sm-4">
+                            <img src="img/top/logo_sumida_jazz.png" alt="Festival Logo" class="menu__modal-logo">
+                            <p class="menu__modal-festival-name">すみだストリートジャズフェスティバル</p>
+                            <p class="menu__modal-festival-date">2025.10.18 sat - 10.19 sun</p>
+                            <button class="btn button button--volunteer">
+                                <div class="col-sm-2">
+                                    <img class="button__icon" src="img/top/icon-user.png" alt="ボランティアアイコン">
+                                </div>
+                                <div class="col-sm-1">
+                                    <span class="button__vline--volunteer"></span>
+                                </div>
+                                <div class="col-sm-9">
+                                    <span class="button__text">ボランティア詳細 / 応募</span>
+                                </div>
+                            </button>
+                            <button class="btn button button--sponsor">
+                                <div class="col-sm-2">
+                                    <img class="button__icon" src="img/top/icon-briefcase.png" alt="ボランティアアイコン">
+                                </div>
+                                <div class="col-sm-1">
+                                    <span class="button__vline--sponsor"></span>
+                                </div>
+                                <div class="col-sm-9">
+                                    <span class="button__text">スポンサー詳細/応募</span>
+                                </div>
+                            </button>
+                            <img src="img/top/logo_october_gibier.png" alt="Festival Logo"
+                                class="menu__modal-logo-gibier">
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="menu__modal-list list-unstyled">
+                                <li class="menu__modal-item"><a href="#"><span>TOP</span>
+                                        <span class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#">お知らせ <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#">タイムテーブル <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#">アーティスト情報 <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#">パンフレット <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#">イベント情報 <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="menu__modal-list list-unstyled">
+                                <li class="menu__modal-item"><a href="#">公式グッズ <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#">募集・アンセム紹介 <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#">ギャラリー <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#">アクセス <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                                <li class="menu__modal-item"><a href="#">アーカイブ <span
+                                            class="glyphicon glyphicon-menu-right"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- モーダル下部：スポンサー・バナー -->
+                    <div class="row menu__modal-bottom">
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="menu__modal-banner">
+                                <img src="img/top/banner_sponsor.png" alt="Banner 1" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="menu__modal-banner">
+                                <img src="img/top/banner_sponsor.png" alt="Banner 2" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="menu__modal-banner">
+                                <img src="img/top/banner_sponsor.png" alt="Banner 3" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="menu__modal-banner">
+                                <img src="img/top/banner_sponsor.png" alt="Banner 4" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="menu__modal-banner">
+                                <img src="img/top/banner_sponsor.png" alt="Banner 5" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- メインセクション -->
+    <main class="main">
+        <!-- =================================
+        ヘッダーセクション
+        ================================= -->
+        <section class="subpage__title--section">
+            <div class="container"><!-- タイトル部分 -->
+                <h1 class="subpage__title">ENTRY</h1>
+                <p class="subpage__subtitle">出演バンドエントリー</p>
+            </div>
+        </section>
+
+        <section class="subpage__main--section">
+            <div class="container">
+                <!--@IGNORE:BEGIN--> <!--@IGNORE:END-->
+                <section class="subpage__part--section">
+                    <!-- =================================
+                    コンテンツパートセクション
+                    ================================= -->
+                    <h2 class="activity-section__title">ボランティアスタッフ登録フォーム</h2>
+                    <p>以下の項目を入力して「登録」ボタンをクリックしてください。(エラーになる場合は<a href="/sj/staff2025/form.cgi">こちら</a>からお試しください)</p>
+                    <form action="./staff2025/reg.cgi" accept-charset="EUC-JP" method="post">
+                        <!-- メールアドレス -->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">
+                                メールアドレス
+                            </label>
+                            <label class="col-sm-1 control-label">
+                                <span class="required" style="color: #ff0000;">※必須</span>
+                            </label>
+                            <div class="col-sm-9">
+                                <p>
+                                    <input class="form-control" name="email" type="text" value="" required="required" />
+                                    <span style="color: #ff0000;">入力ミスがあると自動返信メールが届きません。<br /></span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 名前 -->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">
+                                名前
+                            </label>
+                            <label class="col-sm-1 control-label">
+                                <span class="required" style="color: #ff0000;">※必須</span>
+                            </label>
+                            <div class="col-sm-9">
+                                <p>
+                                    <input class="form-control" name="col1" type="text" value="" required="required" />
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- ふりがな -->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">
+                                ふりがな
+                            </label>
+                            <label class="col-sm-1 control-label">
+                                <span class="required" style="color: #ff0000;">※必須</span>
+                            </label>
+                            <div class="col-sm-9">
+                                <p>
+                                    <input class="form-control" name="col2" type="text" value="" required="required" />
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 性別 -->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">
+                                性別
+                            </label>
+                            <label class="col-sm-1 control-label">
+                                <span class="required" style="color: #ff0000;">※必須</span>
+                            </label>
+                            <div class="col-sm-9">
+                                <div class="radio">
+                                    <label>
+                                        <input name="col3" type="radio" value="男性" required="required" />男性
+                                    </label>&nbsp;
+                                    <span>&nbsp;&nbsp;</span><span>&nbsp;&nbsp;</span><span>&nbsp;&nbsp;</span><span>&nbsp;&nbsp;</span>&nbsp;
+                                    <label>
+                                        <input name="col3" type="radio" value="女性" />女性
+                                    </label>&nbsp;<span>&nbsp;&nbsp;</span><span>&nbsp;&nbsp;</span><span>&nbsp;&nbsp;</span><span>&nbsp;&nbsp;</span>&nbsp;<label>
+                                        <input name="col3" type="radio" value="回答しない" />回答しない
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- すみだジャズネーム（ニックネーム） -->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">
+                                すみだジャズネーム<br />（ニックネーム）
+                            </label>
+                            <label class="col-sm-1 control-label">
+                                &nbsp;
+                            </label>
+                            <div class="col-sm-9">
+                                <p>
+                                    <input class="form-control" name="col9" type="text" value="" />
+                                    <span class="help-block">
+                                        ※ボランティア活動にご協力してくださった皆様へのささやかなお礼として、パンフレットやアフタームービーにお名前を掲載させていただきます。本名でのご掲載を避けたい方はこちらをご記載ください。
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 電話番号 -->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">
+                                電話番号
+                            </label>
+                            <label class="col-sm-1 control-label">
+                                <span class="required" style="color: #ff0000;">※必須</span>
+                            </label>
+                            <div class="col-sm-9">
+                                <p>
+                                    <input class="form-control" name="col4" type="text" value="" required="required" />
+                                    <span class="help-block">携帯電話がおすすめです。　(例)090&minus;0000&minus;0000</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 生年月日（西暦） -->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">
+                                生年月日（西暦）
+                            </label>
+                            <label class="col-sm-1 control-label">
+                                &nbsp;
+                            </label>
+                            <div class="col-sm-9">
+                                <p>
+                                    <input class="form-control" name="col5" type="text" value="" />
+                                    <span class="help-block">(例)1981年6月15日生まれの場合　「19810615」</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 希望配属先 -->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">
+                                希望配属先
+                            </label>
+                            <label class="col-sm-1 control-label">
+                                <span class="required" style="color: #ff0000;">※必須</span>
+                            </label>
+                            <div class="col-sm-9">
+                                <div class="checkbox">
+                                    <table class="defTbl">
+                                        <tbody>
+                                            <tr>
+                                                <td><label><input name="col6" type="checkbox" value="未定" />未定</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label><input name="col6" type="checkbox"
+                                                            value="広報" />広報</label><br />
+                                                    <label><input name="col6" type="checkbox"
+                                                            value="バンステ" />バンドステージ</label><br /> <label><input
+                                                            name="col6" type="checkbox"
+                                                            value="飲食" />飲食</label><br /><label><input name="col6"
+                                                            type="checkbox"
+                                                            value="Tシャツ物販" />Tシャツ・物販</label><br /><label><input
+                                                            name="col6" type="checkbox"
+                                                            value="アーティスト対応" />アーティスト対応<span><span><br /></span></span></label><br />
+                                                    <label><input name="col6" type="checkbox"
+                                                            value="警備" />警備</label><br />
+                                                    <label><input name="col6" type="checkbox"
+                                                            value="救護" />救護</label><br /><label><input name="col6"
+                                                            type="checkbox" value="機材資材物流" />機材・物流</label>
+                                                </td>
+                                                <td><label><input name="col6" type="checkbox"
+                                                            value="イベント" />イベント</label><br /> <label><input name="col6"
+                                                            type="checkbox"
+                                                            value="グリーンエコ" />グリーンエコ<span><br /></span></label><br />
+                                                    <label><input name="col6" type="checkbox"
+                                                            value="撮影（スチル）" />撮影（スチル）</label><span
+                                                        style="color: #737373; background-color: #fcfcfc;">※２</span><br />
+                                                    <label><input name="col6" type="checkbox"
+                                                            value="撮影（動画）" />撮影（動画）</label><span
+                                                        style="color: #737373; background-color: #fcfcfc;">※２</span><br />
+                                                    <label><input name="col6" type="checkbox"
+                                                            value="撮影（スマホクルー）" />撮影（スマホクルー）</label><span
+                                                        style="color: #737373; background-color: #fcfcfc;">※２</span><br />
+                                                    <label><input name="col6" type="checkbox"
+                                                            value="セッション打ち上げ" />打ち上げ</label><br /> <label><input
+                                                            name="col6" type="checkbox"
+                                                            value="国際交流" />国際交流<br /></label><br />
+                                                    <label><input name="col6" type="checkbox"
+                                                            value="人事" />人事</label><br />
+                                                    <label><input name="col6" type="checkbox"
+                                                            value="地域連携" />地域連携</label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="help-block">
+                                    ※活動内容が近いと思われるものを選んでください。<br />
+                                    ※2 撮影関係に希望の方で、ご自身の使用機材があれば下の自由欄にご記入ください。
+                                </span>
+                            </div>
+
+                            <!-- Tシャツ希望サイズ -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                    Tシャツ希望サイズ
+                                </label>
+                                <label class="col-sm-1 control-label">
+                                    <span class="required" style="color: #ff0000;">※必須</span>
+                                </label>
+                                <div class="col-sm-9">
+                                    <p>
+                                    <div class="radio">
+                                        <label>
+                                            <input name="col7" type="radio" value="S" required="required" />S
+                                        </label>&nbsp;
+                                        <span>&nbsp;&nbsp;</span><span>&nbsp;&nbsp;</span><span>&nbsp;&nbsp;</span>&nbsp;
+                                        <label>
+                                            <input name="col7" type="radio" value="M" />M
+                                        </label>&nbsp;&nbsp;&nbsp;&nbsp;<span>&nbsp;
+                                            <span>&nbsp;&nbsp;</span></span>&nbsp;
+                                        <label>
+                                            <input name="col7" type="radio"
+                                                value="L" />L</label>&nbsp;&nbsp;&nbsp;<span>&nbsp;&nbsp;</span><span>&nbsp;&nbsp;</span>&nbsp;
+                                        <label>
+                                            <input name="col7" type="radio" value="XL" />XL
+                                        </label>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 参加予定 -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                    参加予定
+                                </label>
+                                <label class="col-sm-1 control-label">
+                                    <span class="required" style="color: #ff0000;">※必須</span>
+                                </label>
+                                <div class="col-sm-9">
+                                    <div class="checkbox"><label><input name="col8" type="checkbox"
+                                                value="10/17（金）前日準備" />10/17<span>(</span>金) 前日準備</label> <br />
+                                        <label><input name="col8" type="checkbox"
+                                                value="10/18（土）本番1日目" />10/18<span>(</span>土)
+                                            本番1日目</label><br /> <label><input name="col8" type="checkbox"
+                                                value="10/19（日）本番2日目" />10/19<span>(</span>日) 本番2日目</label><br />
+                                        <label><input name="col8" type="checkbox"
+                                                value="10/20（月）片づけ日" />10/20<span>(</span>月)
+                                            片づけ日</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 過去の委員会経験 -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                    過去のすみだジャズで経験した委員会
+                                </label>
+                                <label class="col-sm-1 control-label">
+                                    <span class="required" style="color: #ff0000;">※必須</span>
+                                </label>
+                                <div class="col-sm-9">
+                                    <div class="checkbox">
+                                        <table class="defTbl">
+                                            <tbody>
+                                                <tr>
+                                                    <td><label><input name="col10" type="checkbox"
+                                                                value="なし" />なし</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label><input name="col10" type="checkbox"
+                                                                value="広報" />広報</label><br />
+                                                        <label><input name="col10" type="checkbox"
+                                                                value="バンステ" />バンドステージ<br /></label><br /> <label><input
+                                                                name="col10" type="checkbox"
+                                                                value="飲食" />飲食</label><br /><label><input name="col10"
+                                                                type="checkbox"
+                                                                value="Tシャツ物販" />Tシャツ・物販</label><br /><label><input
+                                                                name="col10" type="checkbox"
+                                                                value="ミュージシャン対応" />アーティスト対応<span><span><br /></span></span></label>
+                                                    </td>
+                                                    <td><label><input name="col10" type="checkbox"
+                                                                value="警備" />警備</label><br />
+                                                        <label><input name="col10" type="checkbox"
+                                                                value="救護" />救護</label><br /><label><input name="col10"
+                                                                type="checkbox"
+                                                                value="機材資材物流" />機材・物流</label><br /><label><input
+                                                                name="col10" type="checkbox"
+                                                                value="イベント" />イベント</label><br /> <label><input
+                                                                name="col10" type="checkbox"
+                                                                value="グリーンエコ" />グリーンエコ<span><br /></span></label>
+                                                    </td>
+                                                    <td><label><input name="col10" type="checkbox"
+                                                                value="写真" />撮影</label><br /><label><input name="col10"
+                                                                type="checkbox"
+                                                                value="セッション打ち上げ" />打ち上げ</label><br /><label><input
+                                                                name="col10" type="checkbox"
+                                                                value="人事" />人事</label><br />
+                                                        <label><input name="col10" type="checkbox"
+                                                                value="地域連携" />地域連携</label><br />
+                                                        <label><input name="col10" type="checkbox"
+                                                                value="トリフォニー" />国際交流<br /></label><br /> <label><input
+                                                                name="col10" type="checkbox" value="その他" />その他</label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <span class="help-block">
+                                        ※委員会の名前が変わっているものがありますが、活動内容が近いと思われるものを選んでください
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- すみだジャズボランティアについてどこで知りましたか？ -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                    すみだジャズボランティアについてどこで知りましたか？
+                                </label>
+                                <label class="col-sm-1 control-label">
+                                    &nbsp;
+                                </label>
+                                <div class="col-sm-9">
+                                    <p>
+                                        <input class="form-control" name="col11" type="text" value="" />
+                                        <span class="help-block">※すみだファンCLUBの参加者は会員番号も記入してください</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 紹介者 -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                    紹介者
+                                </label>
+                                <label class="col-sm-1 control-label">
+                                    &nbsp;
+                                </label>
+                                <div class="col-sm-9">
+                                    <p>
+                                        <input class="form-control" name="col13" type="text" value="" />
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 自由記載欄 -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                    自由記載欄
+                                </label>
+                                <label class="col-sm-1 control-label">
+                                    &nbsp;
+                                </label>
+                                <div class="col-sm-9">
+                                    <p>
+                                        <textarea class="form-control" rows="4" name="col14"></textarea>
+                                        <span class="help-block">
+                                            ※すみだジャズでやりたいことや、意気込み、質問、その他なんでも記入どうぞ<br />
+                                            ※配属先や、参加できる時間帯について、ご希望がありましたらこちらに記入して下さい<br />
+                                            ※撮影関係に希望の方で、ご自身の使用機材があればご記入ください。
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 会則同意 -->
+                            <div class="form-group">
+                                <label class="col-sm-7 control-label">
+                                    <a title="すみだジャズ会則"
+                                        href="https://sumida-jazz.jp/sj/content/files/pdf/regulations7.3.1.pdf"
+                                        target="_blank">
+                                        すみだジャズ会則
+                                    </a>
+                                    をご確認の上、同意していただけますか？
+                                    <span class="required" style="color: #ff0000;">&nbsp;※必須</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <div class="radio">
+                                        <label>
+                                            <input name="col12" type="radio" value="同意する" required="required" />同意します
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- プライバシーポリシー同意 -->
+                            <div class="form-group">
+                                <label class="col-sm-7 control-label">
+                                    <a title="すみだジャズ会則" href="#" target="_blank">
+                                        プライバシーポリシー
+                                    </a>
+                                    をご確認の上、同意していただけますか？
+                                    <span class="required" style="color: #ff0000;">&nbsp;※必須</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <div class="radio">
+                                        <label>
+                                            <input name="col999" type="radio" value="同意する" required="required" />同意します
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 注意事項同意 -->
+                            <div class="form-group">
+                                <label class="col-sm-7 control-label">
+                                    下記の注意事項をご確認の上、同意していただけますか？
+                                    <span class="required" style="color: #ff0000;">&nbsp;※必須</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <div class="radio">
+                                        <label>
+                                            <input name="col999" type="radio" value="同意する" required="required" />同意します
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="privacy">
+                                <p>個人情報・肖像権の取扱いについて</p>
+                                <p>本サイト内で展開する応募フォーム、メールでのご意見の投稿などにおいて、皆様と連絡をとる必要がある場合を想定して、任意で氏名、住所、年齢、性別、電話番号、メールアドレスなどの個人情報(以下個々にまたは総称して｢個人情報｣といいます。)の提供をお願いする場合がありますが、これらの個人情報の取扱いについて、次のとおり細心の注意をもって管理しています。<br />
+                                    ●本サイト内で、個人情報の提供をお願いする場合には､提供をお願いする趣旨を明確に説明いたします。また個人情報の提供は､提供される方の自由な意思に基づき行われることを前提としています。<br />
+                                    ●個人情報保護法をはじめ、個人情報保護に関係する日本の法令その他の規範を遵守してまいります。また、インターネット(フォーマットへの書き込みやメール)及びそれ以外の方法(はがき、FAXなどの郵送･送信書面)などにより取得した個人情報については､当該データや書類を厳重な管理のもとで保管することはもとより、その目的に応じた保管期間を定めるとともに、当該期間が終了した場合には適切な方法で速やかに消去･廃棄処分を行っております。<br />
+                                    ●ご提供いただいた個人情報は予めお知らせした利用目的の範囲内でのみ使用するものとし、事前の同意を得ずにその他の目的で使用し、また第三者に開示することはありません。<br />ただし、次に該当する場合は、当該同意を得ることなく個人情報を開示･提供することがありますので予めご了承ください。<br />
+                                    (a)法令に基づく場合<br /> (b)人の生命、身体又は財産の保護のために必要がある場合であって、同意を得ることが困難であるとき<br />
+                                    (c)国、地方公共団体などの公的な機関(裁判所、警察署など)、又はその委託を受け法令の定める事務を遂行することに対して協力する必要がある場合であって、同意を得ることにより当該事務の遂行に支障を及ぼすおそれがある場合、ならびに当該機関から必要な手続きを経て要請がなされた場合で、すみだストリートジャズフェスティバル事務局が必要と判断した場合。
+                                </p>
+                            </div>
+                            <div class="vform__note">
+                                <strong>【注意事項】</strong><br />
+                                撮影スタッフがイベントの模様を撮影いたします。これらの撮影物（写真・動画等）は、「すみだストリートジャズフェスティバル」の活動報告として、公式ホームページや
+                                公式ＳＮＳ、各種印刷物等に使用･掲載させていただくことがございますので、予めその旨、ご承諾願います。当該使用・掲載に問題がある場合は、下記の問い合わせ先までご連絡をお願いします。ただし、紙媒体として配布される印刷物などについては対応することはできませんので、ご了承願います。
+                                </p>
+                                <p>個人情報・肖像権に関するお問い合わせ先<br />info@sumida-jazz.jp</p>
+                            </div>
+                            <!-- <div class="raadio"><label><input name="col15" type="radio" value="同意する"
+                            required="required" />上記「個人情報・肖像権の取扱いについて」「注意事項」に同意し、すみだストリートジャズフェスティバルのボランティアスタッフとして登録します</label>
+                        </div> -->
+
+                            <!-- 送信ボタン -->
+                            <div class="vform_submit">
+                                <input class="vform_submit-btn" type="submit" value="登録する" />
+                            </div>
+                            <div class="vform__spam">
+                                <span>※sumida-jazz.jpドメインからのメールが迷惑メールフォルダに分類される場合がございます。</span><br /><span>ボランティア登録受付後に自動返信メールが送信されますので、届いていない場合は念のため迷惑メールフォルダもご確認ください。</span><br /><span>※迷惑メールの対策などでドメイン指定を行っている場合、こちらからの返信メールが受信できない場合がございます。「@sumida&minus;jazz.jp」を受信設定してください。</span>
+                            </div>
+                            <input name="reg" type="hidden" value="add" /><input name="checkbox_list" type="hidden"
+                                value=",col6,col8,col10" /><input type="hidden" name="encode" value="EUC-JP">
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッターセクション -->
+    <footer class="footer">
+        <!-- スポンサー バナー -->
+        <div class="sponsor-section container text-center">
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-2"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
+                <div class="col-xs-2"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
+                <div class="col-xs-2"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
+                <div class="col-xs-2"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
+                <div class="col-xs-2"><img src="img/top/banner_sponsor.png" alt="スポンサー"></div>
+                <div class="col-xs-1"></div>
+            </div>
+        </div>
+
+        <!-- SNSセクション -->
+        <div class="sns-section container">
+            <div class="row">
+                <!-- Instagram -->
+                <div class="col-sm-3">
+                    <a href="#" class="sns-section__link">
+                        <div class="row sns-section__item">
+                            <div class="col-sm-4">
+                                <img src="img/top/logo_insta.png" alt="Instagram" class="sns-section__icon">
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="sns-section__text">Instagram</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Facebook -->
+                <div class="col-sm-3">
+                    <a href="#" class="sns-section__link">
+                        <div class="row sns-section__item">
+                            <div class="col-sm-4">
+                                <img src="img/top/logo_facebook.png" alt="Facebook" class="sns-section__icon">
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="sns-section__text">Facebook</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- X (旧Twitter) -->
+                <div class="col-sm-3">
+                    <a href="#" class="sns-section__link">
+                        <div class="row sns-section__item">
+                            <div class="col-sm-4">
+                                <img src="img/top/logo_x.png" alt="X (旧Twitter)" class="sns-section__icon">
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="sns-section__text">X (旧Twitter)</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- YouTube -->
+                <div class="col-sm-3">
+                    <a href="#" class="sns-section__link">
+                        <div class="row sns-section__item">
+                            <div class="col-sm-4">
+                                <img src="img/top/logo_youtube.png" alt="YouTube" class="sns-section__icon">
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="sns-section__text">YouTube</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- バナーセクション -->
+        <div class="container banner-section">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <a href="#" class="banner-section__link">
+                        <img src="img/top/banner_hikifune.png" alt="バナー1" class="banner-section__image">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <a href="#" class="banner-section__link">
+                        <img src="img/top/banner_sumida_jazz.png" alt="バナー2" class="banner-section__image">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- フッターコンテンツ -->
+        <div class="footer__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer__info">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="img/top/logo_sumida_jazz.png" alt="ロゴ" class="footer__logo">
+                            </div>
+                            <div class="col-md-10">
+                                <p>すみだストリートジャズフェスティバル</p>
+                                <p>〒130-0005 東京都墨田区東駒形19-2 2階</p>
+                            </div>
+                        </div>
+                        <button class="btn button--black button--contact">お問い合わせ</button>
+                        <p class="footer__small-text"><a href="#">アーカイブ</a></p>
+                        <p class="footer__small-text"><a href="#">プライバシーポリシー</a></p>
+                        <p class="footer__small-text"><a href="#">一般社団法人SSJF</a></p>
+                        <p class="footer__small-text"><a href="#">定款・資料公告</a></p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-3">
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="#">トップ</a></li>
+                                    <li class="footer__link-item"><a href="#">お知らせ</a></li>
+                                    <li class="footer__link-item"><a href="#">ボランティア募集</a></li>
+                                    <li class="footer__link-item"><a href="#">スポンサー募集</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="#">タイムテーブル</a></li>
+                                    <li class="footer__link-item"><a href="#">アーティスト情報</a></li>
+                                    <li class="footer__link-item"><a href="#">会場マップ・アクセス</a></li>
+                                    <li class="footer__link-item"><a href="#">イベント情報</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="#">公式グッズ</a></li>
+                                    <li class="footer__link-item"><a href="#">募金・アンサム紹介</a></li>
+                                    <li class="footer__link-item"><a href="#">ギャラリー</a></li>
+                                </ul>
+                                <img src="img/top/logo_october_gibier.png" alt="広告" class="footer__ad-banner"><br />
+                                <p class="footer__copylight">&copy; すみだストリートジャズフェスティバル実行委員会</p>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var ua = navigator.userAgent;
+        var sp = (ua.indexOf('iPhone') > 0 || (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0));
+        var tab = (!sp && (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0));
+        if (tab) new ViewportExtra(1150);
+    </script>
+</body>
+
+</html>
