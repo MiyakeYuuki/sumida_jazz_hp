@@ -1366,7 +1366,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* 以降MODX追加分 三宅*/
 /********************************
  * ENTRY
  ********************************/
@@ -1496,4 +1495,180 @@ body {
 
 .defTbl td {
     padding: 8px;
+}
+
+/********************************
+ * SPONSOR
+ ********************************/
+.sponsor__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sponsor__subtitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* 太字のテキスト */
+.sponsor__bold {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* リストのテキスト */
+.sponsor__list {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 通常のテキスト */
+.sponsor__text {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* PC 表示時は固定幅 300px */
+.sponsor__button {
+    display: block;
+    /* ブロック要素にして余白コントロールしやすく */
+    width: 300px;
+    max-width: 100%;
+    /* 画面幅が狭いときはそれ以下に縮む */
+}
+
+/* スマホ（画面幅 300px 以下）の場合は幅 100% */
+@media (max-width: 640px) {
+    .sponsor__button {
+        width: 100%;
+    }
+}
+
+.sponsor__group {
+    background-color: #f8f8f8;
+    /* 枠線 */
+    padding: 30px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* sponsor-personal ブロック全体 */
+.sponsor-personal {
+    margin-bottom: 30px;
+}
+
+/* ヘッダー：タイトルと価格を同じ行に */
+.sponsor-personal__header {
+    align-items: center;
+    /* row の要素を上下中央揃え */
+    margin-bottom: 10px;
+    margin-top: 40px;
+    display: flex;
+}
+
+/* タイトル */
+.sponsor-personal__title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* 価格バッジ */
+.sponsor-personal__price {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px 15px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    width: auto;
+    margin-left: 20px;
+}
+
+/* 区切り線 */
+.sponsor-personal__divider {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 0 0 15px;
+}
+
+/* 説明文 */
+.sponsor-personal__desc {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* 注釈テキスト */
+.sponsor-personal__note {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.sponsor__listgroup {
+    padding: 20px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #C8C8C8;
+}
+
+.sponsor__listgroup-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sponsor__listgroup-list {
+    color: #C8C8C8;
+    padding-left: 20px
+}
+
+.sponsor__listgroup-list span {
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* PC 表示時は固定幅 300px */
+.sponsor__photo {
+    display: block;
+    /* ブロック要素にして余白コントロールしやすく */
+    width: 500px;
+    max-width: 100%;
+    /* 画面幅が狭いときはそれ以下に縮む */
+}
+
+/* PC 表示時は固定幅 300px */
+.sponsor__photo2 {
+    display: block;
+    /* ブロック要素にして余白コントロールしやすく */
+    width: 800px;
+    max-width: 100%;
+    /* 画面幅が狭いときはそれ以下に縮む */
+}
+
+.sponsor__photo-col {
+    margin-top: 10px;
+}
+
+/* スマホ（画面幅 300px 以下）の場合は幅 100% */
+@media (max-width: 640px) {
+
+    .sponsor__photo {
+        width: 100%;
+    }
+
+    .sponsor__photo2 {
+        width: 100%;
+    }
 }
