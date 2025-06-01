@@ -288,24 +288,6 @@
                             </div>
                         </div>
 
-                        <!-- すみだジャズネーム（ニックネーム） -->
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">
-                                すみだジャズネーム<br />（ニックネーム）
-                            </label>
-                            <label class="col-sm-1 control-label">
-                                &nbsp;
-                            </label>
-                            <div class="col-sm-9">
-                                <p>
-                                    <input class="form-control" name="col9" type="text" value="" />
-                                    <span class="help-block">
-                                        ※ボランティア活動にご協力してくださった皆様へのささやかなお礼として、パンフレットやアフタームービーにお名前を掲載させていただきます。本名でのご掲載を避けたい方はこちらをご記載ください。
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-
                         <!-- 電話番号 -->
                         <div class="form-group">
                             <label class="col-sm-2 control-label">
@@ -455,6 +437,35 @@
                                 </div>
                             </div>
 
+                            <!-- 参加回数 -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                    参加回数
+                                </label>
+                                <label class="col-sm-1 control-label">
+                                    <span class="required" style="color: #ff0000;">※必須</span>
+                                </label>
+                                <div class="col-sm-9">
+                                    <div class="radio">
+                                        <label>
+                                            <input name="col9" type="radio" value="初めて" required="required" />初めて
+                                        </label>&nbsp;
+                                        <label>
+                                            <input name="col9" type="radio" value="1回" />1回
+                                        </label>
+                                        <label>
+                                            <input name="col9" type="radio" value="2～3回" />2～3回
+                                        </label>
+                                        <label>
+                                            <input name="col9" type="radio" value="4～10回" />4～10回
+                                        </label>
+                                        <label>
+                                            <input name="col9" type="radio" value="11回以上" />それ以上
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- 過去の委員会経験 -->
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">
@@ -570,58 +581,28 @@
 
                             <!-- 会則同意 -->
                             <div class="form-group">
-                                <label class="col-sm-7 control-label">
+                                <label class="col-sm-8 control-label">
                                     <a title="すみだジャズ会則"
                                         href="https://sumida-jazz.jp/sj/content/files/pdf/regulations7.3.1.pdf"
                                         target="_blank">
                                         すみだジャズ会則
-                                    </a>
-                                    をご確認の上、同意していただけますか？
-                                    <span class="required" style="color: #ff0000;">&nbsp;※必須</span>
-                                </label>
-                                <div class="col-sm-5">
-                                    <div class="radio">
-                                        <label>
-                                            <input name="col12" type="radio" value="同意する" required="required" />同意します
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- プライバシーポリシー同意 -->
-                            <div class="form-group">
-                                <label class="col-sm-7 control-label">
+                                    </a>、
                                     <a title="すみだジャズ会則" href="#" target="_blank">
                                         プライバシーポリシー
-                                    </a>
-                                    をご確認の上、同意していただけますか？
-                                    <span class="required" style="color: #ff0000;">&nbsp;※必須</span>
-                                </label>
-                                <div class="col-sm-5">
-                                    <div class="radio">
-                                        <label>
-                                            <input name="col999" type="radio" value="同意する" required="required" />同意します
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 注意事項同意 -->
-                            <div class="form-group">
-                                <label class="col-sm-7 control-label">
+                                    </a>、
                                     下記の注意事項をご確認の上、同意していただけますか？
                                     <span class="required" style="color: #ff0000;">&nbsp;※必須</span>
                                 </label>
-                                <div class="col-sm-5">
+                                <div class="col-sm-4">
                                     <div class="radio">
                                         <label>
-                                            <input name="col999" type="radio" value="同意する" required="required" />同意します
+                                            <input name="col15" type="radio" value="同意する" required="required" />同意します
                                         </label>
                                     </div>
                                 </div>
                             </div>
 
-                            <div id="privacy">
+                            <div id="privacy" class="col-sm-12">
                                 <p>個人情報・肖像権の取扱いについて</p>
                                 <p>本サイト内で展開する応募フォーム、メールでのご意見の投稿などにおいて、皆様と連絡をとる必要がある場合を想定して、任意で氏名、住所、年齢、性別、電話番号、メールアドレスなどの個人情報(以下個々にまたは総称して｢個人情報｣といいます。)の提供をお願いする場合がありますが、これらの個人情報の取扱いについて、次のとおり細心の注意をもって管理しています。<br />
                                     ●本サイト内で、個人情報の提供をお願いする場合には､提供をお願いする趣旨を明確に説明いたします。また個人情報の提供は､提供される方の自由な意思に基づき行われることを前提としています。<br />
@@ -649,8 +630,9 @@
                             <div class="vform__spam">
                                 <span>※sumida-jazz.jpドメインからのメールが迷惑メールフォルダに分類される場合がございます。</span><br /><span>ボランティア登録受付後に自動返信メールが送信されますので、届いていない場合は念のため迷惑メールフォルダもご確認ください。</span><br /><span>※迷惑メールの対策などでドメイン指定を行っている場合、こちらからの返信メールが受信できない場合がございます。「@sumida&minus;jazz.jp」を受信設定してください。</span>
                             </div>
-                            <input name="reg" type="hidden" value="add" /><input name="checkbox_list" type="hidden"
-                                value=",col6,col8,col10" /><input type="hidden" name="encode" value="EUC-JP">
+                            <input name="reg" type="hidden" value="add" />
+                            <input name="encode" type="hidden" value="文字コード" />
+                            <input name="checkbox_list" type="hidden" value=",col6,col8,col10,col15" />
                     </form>
                 </section>
             </div>
