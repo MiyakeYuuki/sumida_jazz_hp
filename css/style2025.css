@@ -733,6 +733,11 @@ body {
     padding: 10px 0;
 }
 
+.banner-section h3 {
+    color: var(--color-white);
+    font-size: 20px;
+}
+
 .footer__content {
     padding: 20px 0;
 }
@@ -940,6 +945,15 @@ body {
     #twitter {
         padding-right: 25px;
     }
+
+    .festival__carousel {
+        margin: 5px 0px;
+    }
+
+    .festival__content {
+        padding: 0 0px;
+    }
+
 }
 
 /* =================================
@@ -1496,6 +1510,7 @@ body {
 .defTbl td {
     padding: 0px;
 }
+
 
 /********************************
  * SPONSOR
